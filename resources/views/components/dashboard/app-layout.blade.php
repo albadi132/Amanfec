@@ -18,7 +18,8 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="{{ asset('build/assets/assets/img/favicon/favicon.ico') }}" />
+   <link rel="shortcut icon" href="{{ asset('build/images/favicon.ico')}}" type="image/x-icon">
+  <link rel="icon" href="{{ asset('build/images/favicon.ico')}}" type="image/x-icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

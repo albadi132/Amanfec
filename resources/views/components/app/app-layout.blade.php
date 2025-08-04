@@ -3,7 +3,22 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Consultez - Business Consulting HTML Template | Home Page 01</title>
+  <!-- 🔍 SEO Title -->
+  <title>AMAN Fire Protection Consultancy | Trusted Safety & Risk Experts</title>
+
+
+  <meta name="description" content="AMAN Fire Protection Consultancy provides expert solutions in fire safety, risk assessment, system design, and compliance. We help protect lives and assets.">
+
+  <meta name="keywords" content="fire safety, risk assessment, fire protection, safety consultancy, AMAN Oman, fire system design, NFPA, firefighting, consultancy">
+
+  <meta name="author" content="Salim Albadi - salim.albadi@spacetechno.om">
+
+  <meta property="og:title" content="AMAN Fire Protection Consultancy" />
+  <meta property="og:description" content="Expert consultancy in fire safety and protection systems in Oman and GCC." />
+  <meta property="og:image" content="{{ asset('build/images/about/about-two-image.png')}}" />
+  <meta property="og:url" content="{{ url()->current() }}" />
+  <meta property="og:type" content="website" />
+
   <!-- Stylesheets -->
   <link href="{{ asset('build/css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{ asset('build/css/flatpickr.min.css')}}" rel="stylesheet">
