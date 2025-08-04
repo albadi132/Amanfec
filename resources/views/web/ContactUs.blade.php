@@ -120,10 +120,10 @@
     <!-- Testimonil area start here -->
     <section class="testimonial-section-four paralax__animation">
       <div class="map">
-        <img src="http://127.0.0.1:8000/build/images/shape/testimonial-four-map.png" alt="Image">
+        <img src="{{ asset('build/images/shape/testimonial-four-map.png')}}" alt="Image">
       </div>
       <div class="hero-image">
-        <img data-depth="0.01" src="http://127.0.0.1:8000/build/images/testimonial/testimonial-four-hero.png" alt="Image">
+        <img data-depth="0.01" src="{{ asset('build/images/testimonial/testimonial-four-hero.png')}}" alt="Image">
       </div>
       <div class="container">
         <div class="outer-box">

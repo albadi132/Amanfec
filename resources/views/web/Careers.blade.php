@@ -25,7 +25,7 @@
       </div>
       <div class="col-lg-12">
         <div class="services-details__content position-relative my-5">
-          <img src="http://127.0.0.1:8000/build/images/resource/service-details.jpg" alt="" />
+          <img src="{{ asset('build/images/resource/service-details.jpg') }}" alt="" />
 
         </div>
       </div>
@@ -38,8 +38,8 @@
           <h2 class="title mb-30 wow splt-txt" data-splitting>Product Devlopment <br class="d-none d-lg-block"> For Butter Business</h2>
         </div>
       </div>
-    </div> <!-- نهاية row الثاني -->
-  </div> <!-- نهاية container -->
+    </div>
+  </div>
 </section>
 
    <!-- Jobs Start -->
