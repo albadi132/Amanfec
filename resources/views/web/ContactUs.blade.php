@@ -23,7 +23,7 @@
         <div class="outer-box">
           <div class="sec-title center mb-50">
             <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Contact With Us Now</h6>
-            <h2 class="title wow splt-txt" data-splitting>Feel Free to Write Our <br> Alen Hispro</h2>
+            <h2 class="title wow splt-txt" data-splitting>Where Every Inquiry Receives <br>Expert Attention</h2>
           </div>
                     @if (session('success'))
   <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -59,30 +59,43 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="input-feild">
-                    <input name="form_phone"  type="text" placeholder="Enter Phone">
-                    <div class="icon">
-                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.98874 0.832031V2.4987H12.4936V0.832031H14.3285V2.4987H17.9984C18.5052 2.4987 18.9159 2.8718 18.9159 3.33203V16.6654C18.9159 17.1256 18.5052 17.4987 17.9984 17.4987H1.48388C0.977179 17.4987 0.566406 17.1256 0.566406 16.6654V3.33203C0.566406 2.8718 0.977179 2.4987 1.48388 2.4987H5.15379V0.832031H6.98874ZM17.081 9.16536H2.40136V15.832H17.081V9.16536ZM5.15379 4.16536H2.40136V7.4987H17.081V4.16536H14.3285V5.83203H12.4936V4.16536H6.98874V5.83203H5.15379V4.16536Z"
-                          fill="#092D3C" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="input-feild">
-                    <input placeholder="Enter Subject"  type="text" name="form_subject">
-                    <div class="icon">
-                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.98874 0.832031V2.4987H12.4936V0.832031H14.3285V2.4987H17.9984C18.5052 2.4987 18.9159 2.8718 18.9159 3.33203V16.6654C18.9159 17.1256 18.5052 17.4987 17.9984 17.4987H1.48388C0.977179 17.4987 0.566406 17.1256 0.566406 16.6654V3.33203C0.566406 2.8718 0.977179 2.4987 1.48388 2.4987H5.15379V0.832031H6.98874ZM17.081 9.16536H2.40136V15.832H17.081V9.16536ZM5.15379 4.16536H2.40136V7.4987H17.081V4.16536H14.3285V5.83203H12.4936V4.16536H6.98874V5.83203H5.15379V4.16536Z"
-                          fill="#092D3C" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
+<div class="col-lg-6">
+  <div class="input-feild">
+    <input name="form_phone" type="text" placeholder="Enter Phone">
+    <div class="icon" aria-hidden="true">
+      <!-- Phone icon -->
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+           xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+        <path d="M22 16.92v2a2 2 0 0 1-2.18 2
+                 19.79 19.79 0 0 1-8.63-3.07
+                 19.5 19.5 0 0 1-6-6
+                 A19.79 19.79 0 0 1 2.08 4.18
+                 2 2 0 0 1 4.06 2h2a2 2 0 0 1 2 1.72
+                 c.12.9.33 1.77.64 2.6a2 2 0 0 1-.45 2.11L7.91 9.91
+                 a16 16 0 0 0 6.18 6.18l1.48-1.34
+                 a2 2 0 0 1 2.11-.45c.83.31 1.7.52 2.6.64
+                 A2 2 0 0 1 22 16.92Z"
+              stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-6">
+  <div class="input-feild">
+    <input placeholder="Enter Subject" type="text" name="form_subject">
+    <div class="icon" aria-hidden="true">
+      <!-- Subject (edit/pen) icon -->
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+           xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+        <path d="M12 20h9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M16.5 3.5a2.12 2.12 0 1 1 3 3L7 19l-4 1 1-4L16.5 3.5Z"
+              stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
                 <div class="col-lg-12">
                   <div class="input-feild textarea-feild">
                     <textarea name="form_message" placeholder="Write Message"></textarea>

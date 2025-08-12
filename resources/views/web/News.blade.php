@@ -22,29 +22,24 @@
     <div class="container">
       <div class="row g-4">
         @forelse ($news as $item)
-          <div class="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="{{ $loop->index * 100 }}ms" data-wow-duration="1500ms">
-            <div class="blog-block">
-              <div class="inner-box">
-                <div class="image-box">
-                  <figure class="image">
-                    <img src="{{ $item->cover_image ? asset('storage/' . $item->cover_image) : asset('build/images/blog/blog-placeholder.jpg') }}" alt="{{ $item->title }}">
-                  </figure>
-                </div>
-                <div class="content-box">
-                  <h4 class="title">
-                    <a href="{{ route('news.details', $item->slug) }}">{{ $item->title }}</a>
-                  </h4>
-                  <a href="{{ route('news.details', $item->slug) }}" class="arry-btn">Read More
-                 <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7.38853 0.804688C5.43079 0.804688 3.5533 1.56122 2.16901 2.90791C0.784654 4.25449 0.00695801 6.08099 0.00695801 7.98541C0.00695801 9.88983 0.784654 11.7163 2.16901 13.0629C3.55325 14.4096 5.43085 15.1661 7.38853 15.1661C8.6842 15.1661 9.95714 14.8343 11.0793 14.2041C12.2014 13.5738 13.1332 12.6674 13.7812 11.5757C14.429 10.4841 14.7701 9.24582 14.7701 7.98541C14.7701 6.08094 13.9924 4.25454 12.6081 2.90791C11.2238 1.56122 9.34622 0.804688 7.38853 0.804688ZM11.0793 7.99972C11.0818 8.1558 11.0189 8.30616 10.905 8.41625L8.47505 10.7729C8.32501 10.9192 8.10619 10.9764 7.90096 10.9231C7.69582 10.8698 7.53539 10.714 7.48018 10.5146C7.42509 10.315 7.48358 10.102 7.63362 9.95577L9.05678 8.56993H4.28832C4.07742 8.56993 3.88246 8.46044 3.77693 8.28273C3.67148 8.10492 3.67148 7.88592 3.77693 7.70822C3.88249 7.53051 4.07742 7.42102 4.28832 7.42102H9.07022L7.63378 6.02366C7.48343 5.87741 7.42473 5.66432 7.47972 5.46457C7.53481 5.26482 7.69515 5.10874 7.9005 5.05525C8.10584 5.00175 8.32498 5.05885 8.47522 5.20511L10.9052 7.56178C11.0173 7.67008 11.08 7.81744 11.0795 7.97111V7.99986L11.0793 7.99972Z"
-                          fill="#163839" />
-                      </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
+<div class="col-md-6 col-xl-4 wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+        <article class="blog-block-two">
+          <div class="image-box">
+            <figure class="image">
+              <img src="{{ asset('storage/' . $item->cover_image) }}" alt="{{ $item->title }}">
+            </figure>
           </div>
+
+          <div class="content-box">
+            <h4 class="title">
+              <a class="stretched-link" href="{{ route('news.details', $item->slug) }}">{{ $item->title }}</a>
+            </h4>
+            <a class="btn-one-rounded" href="{{ route('news.details', $item->slug) }}">
+              Read More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
         @empty
           <div class="col-12 text-center">
             <p>No news articles found.</p>
@@ -56,7 +51,7 @@
 <div class="mt-5">
   <nav aria-label="News pagination" class="d-flex justify-content-center">
     <ul class="pagination pagination-lg">
-      {{-- روابط الصفحة --}}
+
       {{ $news->onEachSide(1)->links('pagination::bootstrap-5') }}
     </ul>
   </nav>
@@ -89,5 +84,170 @@
 </style>
 @endpush
 
+@push('styles')
+<style>
+/* ====== البطاقة الطولية بالصورة ====== */
+.blog-block-two{
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  /* نسبة طولية ثابتة 3:4 */
+  aspect-ratio: 3 / 4;
+  /* Fallback للمتصفحات القديمة: يحاكي النسبة */
+  height: 0;
+  padding-top: calc(100% * (4 / 3)); /* 4/3 = (الارتفاع/العرض) */
+}
+@supports (aspect-ratio: 3 / 4){
+  .blog-block-two{
+    height: auto;
+    padding-top: 0;
+  }
+}
 
+/* ظل وحدود خفيفة */
+.blog-block-two{
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+.blog-block-two:hover{
+  transform: translateY(-4px);
+  border-color: rgba(214,40,40,0.45);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* الصورة تملأ الكرت بالكامل */
+.blog-block-two .image-box,
+.blog-block-two .image-box .image,
+.blog-block-two .image-box img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.blog-block-two .image-box img{
+  object-fit: cover;     /* يملأ مع القص */
+  object-position: center;
+  display: block;
+  transform: scale(1.01);
+  transition: transform .45s ease;
+}
+.blog-block-two:hover .image-box img{
+  transform: scale(1.06); /* تكبير بسيط عند المرور */
+}
+
+/* تدرّج أسفل لتوضيح النص */
+.blog-block-two .content-box{
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 16px 16px 14px;
+  background: linear-gradient(to top, rgba(0,0,0,0.72), rgba(0,0,0,0.45), transparent 70%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* العنوان: احجز 3 أسطر دائمًا */
+.blog-block-two .content-box .title{
+  --lines: 3;
+  line-height: 1.35;
+  margin: 0;
+  font-size: 1.05rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--lines);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: calc(1.35em * var(--lines)); /* يحجز ارتفاع 3 أسطر */
+}
+.blog-block-two .content-box .title a{
+  color: #fff;
+  text-decoration: none;
+}
+
+/* الزر */
+.blog-block-two .content-box .btn-one-rounded{
+  align-self: flex-start;
+  margin-top: 6px;
+  background: #d62828;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 22px;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background .3s ease, transform .2s ease;
+}
+.blog-block-two .content-box .btn-one-rounded:hover{
+  background: #b81f1f;
+  transform: translateY(-1px);
+}
+
+/* اجعل <figure> بلا مسافات افتراضية */
+.blog-block-two .image-box figure{
+  margin: 0;
+}
+
+/* لجعل الكرت بأكمله قابل للنقر عبر .stretched-link (Bootstrap-like سلوك إن أردت) */
+.blog-block-two .stretched-link::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+/* العنوان مع خلفية حمراء شفافة وحدود ناعمة */
+.blog-block-two .content-box .title {
+  --lines: 3;
+  line-height: 1.4;
+  margin: 0;
+  font-size: 1.3rem; /* تكبير الخط */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--lines);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: calc(1.4em * var(--lines));
+}
+
+/* الزر بنفس النمط */
+.blog-block-two .content-box .btn-one-rounded {
+  align-self: flex-start;
+  margin-top: 6px;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 22px;
+  font-size: 15px; /* تكبير الخط */
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background .3s ease, transform .2s ease;
+}
+.blog-block-two .content-box .btn-one-rounded:hover {
+  background: rgba(184, 31, 31, 0.85); /* أغمق عند المرور */
+  transform: translateY(-1px);
+}
+/* الصندوق السفلي مع تدرج غامق */
+.blog-block-two .content-box {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 16px 16px 14px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,   /* أسفل غامق جدًا */
+    rgba(0, 0, 0, 0.6) 40%,   /* تدرج متوسط */
+    rgba(0, 0, 0, 0.3) 70%,   /* شبه شفاف */
+    transparent 100%          /* شفاف تمامًا */
+  );
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+</style>
+@endpush
 </x-app.app-layout>

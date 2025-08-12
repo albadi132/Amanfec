@@ -27,15 +27,7 @@
           </p>
           <div class="info mt-50 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
             <a class="btn-one-rounded" href="{{ route('ContactUs') }}">Contact Us <i class="fa-regular fa-arrow-up-right"></i></a>
-            <div class="user">
-              <ul>
-                <li><img src="{{ asset('build/images/brand/Picture1.png')}}" alt="Image" style="width: 50px;height: 50px;"></li>
-                <li><img src="{{ asset('build/images/brand/Picture2.png')}}" alt="Image" style="width: 50px;height: 50px;"></li>
-                <li><img src="{{ asset('build/images/brand/Picture3.png')}}" alt="Image" style="width: 50px;height: 50px;"></li>
-                <li><img src="{{ asset('build/images/brand/Picture7.png')}}" alt="Image" style="width: 50px;height: 50px;"></li>
-              </ul>
-              <h6 class="title">Trusted by clients around the region. <img src="{{ asset('build/images/about/about-two-line.png')}}" alt="Image"></h6>
-            </div>
+
           </div>
         </div>
       </div>
@@ -77,52 +69,54 @@
     <section class="brand-section">
       <div class="container">
         <div class="outer-box">
-
+<div class="sec-title mb-50">
+            <h6 class="title">Accreditations & Certifications</h6>
+          </div>
           <div class="swiper brand-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture1.png')}}" alt="Image" style="width: 80px;height: 85px;"></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/Picture1.png')}}" alt="Image" ></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture2.png')}}" alt="Image" style="width: 80px;height: 85px;"></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/Picture2.png')}}" alt="Image" ></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture3.png')}}" alt="Image"  style="width: 80px;height: 85px;"></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/Picture3.png')}}" alt="Image"  ></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture4.png')}}" alt="Image"  style="width: 80px;height: 85px;"></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/Picture4.png')}}" alt="Image" ></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture5.png')}}" alt="Image"  style="width: 80px;height: 85px;"></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/Picture5.png')}}" alt="Image"  ></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture6.png')}}" alt="Image"  style="width: 80px;height: 85px;"></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/Picture6.png')}}" alt="Image" ></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture7.png')}}" alt="Image"  style="width: 80px;height: 85px;"></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/Picture7.png')}}" alt="Image"  ></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture8.png')}}" alt="Image"  style="width: 80px;height: 85px;"></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/Picture8.png')}}" alt="Image" ></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture9.png')}}" alt="Image"  style="width: 80px;height: 85px;"></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/Picture9.png')}}" alt="Image"  ></a>
                 </div>
               </div>
 
@@ -181,6 +175,33 @@
         </div>
       </div>
     </div>
+
+
+    <div class="row align-items-lg-center">
+        <div class="col-lg-6">
+          <div class="sec-title mb-40">
+            <h2 class="title mb-30 wow splt-txt" data-splitting>our Expertise<br class="d-none d-lg-block">  </h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="project-details__top mt-lg-5">
+            <ul class="project-list mb-5">
+              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Front-end Engineering Design (FEED)	</li>
+              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Community Risk Assessment	</li>
+              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Emergency Management</li>
+              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Hazardous Materials</li>
+                 <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Product Evaluation	</li>
+              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Litigation Support	</li>
+              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> HCIS/SAF Consultancy Services </li>
+              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Strategic Risk Management</li>
+                            <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Fire and Building Safety	</li>
+              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Master Plan Review </li>
+              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Seminars & Training</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
   </section>
   <!--Project Details End-->
 
@@ -195,9 +216,9 @@
         <div class="row g-5">
           <div class="col-xl-7 order-2 order-xl-1">
             <div class="sec-title mb-30">
-              <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Testimonial</h6>
+              <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Learning in Action</h6>
               <div class="flex-content">
-                <h2 class="title text-white wow splt-txt" data-splitting>What our customers say <span class="font-weight-300">about us</span></h2>
+                <h2 class="title text-white wow splt-txt" data-splitting>Building Expertise <span class="font-weight-300">Shaping the Future</span></h2>
                 <div class="btn-wrp">
                   <button class="testimonial-prev-three"><i class="fa-regular fa-angle-left"></i></button>
                   <button class="testimonial-next-three"><i class="fa-regular fa-angle-right"></i></button>
@@ -210,35 +231,15 @@
                 <div class="swiper-slide">
                   <div class="testimonial-block-three">
                     <p class="text">
-                      “The team’s constant supervision and proactive risk assessments during peak operational periods such as Hajj and Ramadan were impressive. They ensured full compliance and readiness under critical conditions.”
+                      “Our in-house subject matter experts include NFPA certified trainers who lead ongoing technical development and knowledge-sharing. We run a structured training and development program for graduate engineers, designed to build practical skills, code expertise, and long-term professional growth.”
                     </p>
                     <div class="info">
-                      <h4 class="title">Eng. Faisal Al Saud / <span>Project Director – Riyadh Mega Facility</span></h4>
+                      <h4 class="title">Yogeesha V Ningaiah / <span>Senior Fire Protection Engineer</span></h4>
                     </div>
                   </div>
                 </div>
 
-                <div class="swiper-slide">
-                  <div class="testimonial-block-three">
-                    <p class="text">
-                      “From the initial design to final approvals, every stage was handled with precision. Their deep technical knowledge and coordination with Civil Defense made a significant difference in our project’s timeline.”
-                    </p>
-                    <div class="info">
-                      <h4 class="title">Dr. Amal Al Otaibi / <span>Lead Architect – Jeddah Commercial Tower</span></h4>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="swiper-slide">
-                  <div class="testimonial-block-three">
-                    <p class="text">
-                      “Their use of advanced CFD modeling and fire dynamics simulations gave us a new level of confidence in our smoke control strategy. Truly professional and detail-oriented team.”
-                    </p>
-                    <div class="info">
-                      <h4 class="title">Ahmed Al Qadi / <span>Fire Safety Manager – AlUla Development</span></h4>
-                    </div>
-                  </div>
-                </div>
 
               </div>
             </div>
@@ -246,7 +247,7 @@
           <div class="col-xl-5 order-1 order-xl-2 image-column d-none d-sm-block">
             <div class="inner-column">
               <figure class="image">
-                <img src="{{ asset('build/images/testimonial/testimonial-two-image.jpg')}}" alt="Image">
+                <img src="{{ asset('build/images/testimonial/Bahaa_big.jpg')}}" alt="Image">
                 <div class="icon">
                   <svg width="33" height="25" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path

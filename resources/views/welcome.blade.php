@@ -23,7 +23,7 @@
           <div class="row g-0 align-items-end">
             <div class="col-lg-8 content-column">
               <div class="inner-column">
-                <h6 class="sub-title" data-animation="fadeInUp" data-delay=".3s">Aman Fire Engineering & Safety Consultancy</h6>
+                <h6 class="sub-title" data-animation="fadeInUp" data-delay=".3s" >Aman Fire Engineering & Safety Consultancy</h6>
                 <h1 class="title" data-animation="fadeInUp" data-delay=".5s">Your Reliable
                   <span>Fire & Life Safety Partner</span>
                   Across the GCC
@@ -32,7 +32,7 @@
               </div>
             </div>
             <div class="col-lg-4">
-              <p class="text" data-animation="fadeInUp" data-delay=".9s">We don’t just follow codes. We help write them.</p>
+              <p class="text" data-animation="fadeInUp" data-delay=".9s" >We don’t just follow codes. We help write them.</p>
             </div>
           </div>
         </div>
@@ -88,8 +88,9 @@
 </div>
 
     </section>
-    <!-- Banner area end here -->
 
+
+    @if($partners && $partners->count() > 0)
         <!-- Brand area start here -->
     <section class="brand-section pt-120">
       <div class="container">
@@ -111,7 +112,7 @@
         </div>
       </div>
     </section>
-    <!-- Brand area end here -->
+    @endif
 
      <!-- About area start here -->
     <section class="about-section-two paralax__animation pt-120 pb-120">
@@ -144,51 +145,62 @@
    <div class="info mt-50 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                            <div class="user">
 
-                  <h6 class="title">Credentials & Affiliations<img src="{{ asset('build/images/about/about-two-line.png')}}" alt="Image"></h6>
+                  <h6 class="title">Accreditations & Certifications<img src="{{ asset('build/images/about/about-two-line.png')}}" alt="Image"></h6>
                   </div>
                 </div>
 
    <div class="info mt-20 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                 <div class="item">
                   <div class="icon">
-                    <img style="width: 80px; height: 80px;" src="{{ asset('build/images/cert/Civil Defense.png')}}" alt="Icon">
+                    <img  src="{{ asset('build/images/brand/Picture1.png')}}" alt="Icon">
                   </div>
                 </div>
                 <div class="item">
                   <div class="icon">
-                    <img style="width: 80px; height: 80px;" src="{{ asset('build/images/cert/NFPA.png')}}" alt="Icon">
+                    <img  src="{{ asset('build/images/brand/Picture2.png')}}" alt="Icon">
                   </div>
                 </div>
                 <div class="item">
                   <div class="icon">
-                    <img style="width: 80px; height: 80px;" src="{{ asset('build/images/cert/NAFI.png')}}" alt="Icon">
+                    <img  src="{{ asset('build/images/brand/Picture3.png')}}" alt="Icon">
                   </div>
                 </div>
                  <div class="item">
                   <div class="icon">
-                    <img style="width: 80px; height: 80px;" src="{{ asset('build/images/cert/ISO.png')}}" alt="Icon">
+                    <img  src="{{ asset('build/images/brand/Picture4.png')}}" alt="Icon">
                   </div>
-                </div>
 
+                </div>
                 </div>
                    <div class="info mt-10 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                 <div class="item">
                   <div class="icon">
-                    <img style="width: 80px; height: 80px;" src="{{ asset('build/images/cert/HCIS.jpg')}}" alt="Icon">
+                    <img  src="{{ asset('build/images/brand/Picture5.png')}}" alt="Icon">
                   </div>
                 </div>
                 <div class="item">
                   <div class="icon">
-                    <img style="width: 80px; height: 80px;" src="{{ asset('build/images/cert/MODON.png')}}" alt="Icon">
+                    <img  src="{{ asset('build/images/brand/Picture6.png')}}" alt="Icon">
                   </div>
                 </div>
                 <div class="item">
                   <div class="icon">
-                    <img style="width: 80px; height: 80px;" src="{{ asset('build/images/cert/Saudi Council of Engineers.png')}}" alt="Icon">
+                    <img  src="{{ asset('build/images/brand/Picture7.png')}}" alt="Icon">
+                  </div>
+                </div>
+                  <div class="item">
+                  <div class="icon">
+                    <img  src="{{ asset('build/images/brand/Picture8.png')}}" alt="Icon">
                   </div>
                 </div>
  </div>
-
+    <div class="info mt-10 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+        </div>
+<div class="item">
+                  <div class="icon">
+                    <img  src="{{ asset('build/images/brand/Picture9.png')}}" alt="Icon">
+                  </div>
+</div>
 
 
                 <div class="info mt-50 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
@@ -216,10 +228,8 @@
                 <div class="sec-title">
   <h2 class="title wow splt-txt" data-splitting>About Aman</h2>
   <p class="text wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
- At Aman, we deliver advanced fire protection and life safety solutions for complex, high-risk environments across the Middle East.
-With certified experts and deep regional insight, we provide end-to-end services—from code consulting and performance-based design to system modeling, inspection, and commissioning.
-We don’t just follow safety codes — we help shape them.
-Our purpose is clear: protecting people, property, and progress.
+At Aman, we deliver advanced fire protection and life safety solutions for complex, high-risk environments across the Middle East. With certified experts and deep regional insight, we provide end-to-end services from code consulting and performance-based design to system modeling, inspection, and commissioning.
+We don’t just follow safety codes, we help shape them. Our purpose is clear: protecting people, property, and progress.
   </p>
 </div>
                 <div class="about-block wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
@@ -231,7 +241,7 @@ Our purpose is clear: protecting people, property, and progress.
     <div class="content">
       <h4 class="title">Our Message</h4>
       <p class="text">
-      With deep collaboration across the industry, Aman takes a proactive approach to fire and life safety—engineering safety into every decision, design, and service.</p>
+   With deep collaboration across the industry, Aman takes a proactive approach to fire and life safety engineering safety into every decision, design, and service. </p>
     </div>
   </div>
 </div>
@@ -244,7 +254,8 @@ Our purpose is clear: protecting people, property, and progress.
                      </div>
     <div class="content">
       <h4 class="title">Shaping Safety Standards</h4>
-      <p class="text">We don’t just follow codes. We help write them. Our hands on involvement with regional authorities and regulatory bodies gives our clients a strategic edge in navigating the evolving landscape of safety standards and approvals.</p>
+      <p class="text">
+     We don’t just follow codes. We help write them. Our hands-on involvement with regional authorities and regulatory bodies gives our clients a strategic edge in navigating the evolving landscape of safety standards and approvals. </p>
     </div>
   </div>
 </div>
@@ -274,7 +285,7 @@ Our purpose is clear: protecting people, property, and progress.
               </div>
 
               <div class="image2 overlay-anim" data-depth="0.05">
-                <img src="{{ asset('build/images/about/about-image2.jpg')}}" alt="Image">
+                <img src="{{ asset('build/images/about/ACCZ.png')}}" alt="Image">
               </div>
             </div>
           </div>
@@ -294,7 +305,7 @@ Our purpose is clear: protecting people, property, and progress.
     <div class="sec-title mb-50">
       <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1000ms">Our Services</h6>
       <div class="flex-content">
-        <h2 class="title wow splt-txt" data-splitting>End-to-End Fire Safety Engineering Solutions.<br> Proven Results. </h2>
+        <h2 class="title wow splt-txt" data-splitting>End-to-End Fire Safety Engineering<br>Solutions, Proven Results. </h2>
         <a class="btn-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms" href="{{ route('Services') }}">Explore All Services</a>
 
       </div>
@@ -458,6 +469,7 @@ Our purpose is clear: protecting people, property, and progress.
   </div>
 </section>
 
+
     <section class="case-section have-combine pt-120 pb-120">
       <div class="outer-box">
         <div class="sec-title center mb-50">
@@ -592,7 +604,7 @@ Our purpose is clear: protecting people, property, and progress.
           <div class="col-lg-4 image-column">
             <div class="inner-column">
               <figure class="image">
-                <img class="wow imageDownToUP" src="{{ asset('build/images/testimonial/testimonial-two-image.jpg')}}" alt="Image">
+                <img class="wow imageDownToUP" src="{{ asset('build/images/testimonial/Picture1.png')}}" alt="Image">
 
               </figure>
             </div>
@@ -739,9 +751,9 @@ Our purpose is clear: protecting people, property, and progress.
     <!-- Team area end here -->
 
 
-
-
 <!-- Testimonial area start here -->
+
+
 <section class="testimonial-section">
   <div class="outer-box">
     <figure class="shape">
@@ -749,7 +761,7 @@ Our purpose is clear: protecting people, property, and progress.
     </figure>
     <div class="swiper testimonial-slider">
       <div class="swiper-wrapper">
-        <!-- Testimonial 1 -->
+
         <div class="swiper-slide">
           <div class="testimonial-block">
             <div class="inner-box">
@@ -774,46 +786,15 @@ Our purpose is clear: protecting people, property, and progress.
               </div>
               <div class="content-box">
                 <h3 class="text">
-                  "Working with Aman Fire & Safety was a seamless experience. Their team demonstrated exceptional professionalism, from the initial safety assessment to the final installation. We felt confident and well-supported throughout the entire process."
+                  "Our in-house subject matter experts include NFPA certified trainers who lead ongoing technical development and knowledge-sharing. We run a structured training and development program for graduate engineers, designed to build practical skills, code expertise, and long-term professional growth."
                 </h3>
-                <h4 class="title">Ali Hassan / <span>Facility Manager</span></h4>
+                <h4 class="title">Yogeesha V Ningaiah / <span>Senior Fire Protection Engineer</span></h4>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Testimonial 2 -->
-        <div class="swiper-slide">
-          <div class="testimonial-block">
-            <div class="inner-box">
-              <div class="image-box">
-                <div class="quate">
-                    <svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M29.1965 2.87439C30.9987 4.85084 32.0801 7.00696 32.0801 10.6005C32.0801 16.8892 27.5745 22.4592 21.2666 25.334L19.6446 22.9982C25.592 19.764 26.8536 15.6314 27.214 12.9363C26.3129 13.4753 25.0513 13.655 23.7897 13.4753C20.5457 13.116 18.0225 10.6005 18.0225 7.18663C18.0225 5.56954 18.7434 3.95245 19.8248 2.69472C21.0864 1.43698 22.5282 0.897949 24.3304 0.897949C26.3129 0.897949 28.1151 1.79633 29.1965 2.87439ZM11.174 2.87439C12.9763 4.85084 14.0576 7.00696 14.0576 10.6005C14.0576 16.8892 9.55198 22.4592 3.24412 25.334L1.6221 22.9982C7.56951 19.764 8.83109 15.6314 9.19153 12.9363C8.29041 13.4753 7.02884 13.655 5.76727 13.4753C2.52322 13.116 7.62939e-05 10.6005 7.62939e-05 7.18663C7.62939e-05 5.56954 0.720974 3.95245 1.80232 2.69472C2.88367 1.43698 4.50569 0.897949 6.30794 0.897949C8.29041 0.897949 10.0927 1.79633 11.174 2.87439Z"
-                          fill="#163839" />
-                      </svg>
-                </div>
-                <figure class="image">
-                  <img src="{{ asset('build/images/testimonial/MTc0NzI5NjI2NDY4MjVhMDA4NzcwY.png')}}" alt="Client">
-                </figure>
-                <div class="star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-              <div class="content-box">
-                <h3 class="text">
-                  "Aman delivered exactly what we needed for our new commercial building. Their attention to detail and clear communication made the entire fire safety compliance process stress-free. Highly recommended!"
-                </h3>
-                <h4 class="title">Sarah Al Busaidi / <span>Project Coordinator</span></h4>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
 
       <div class="swiper-arry">
@@ -823,6 +804,7 @@ Our purpose is clear: protecting people, property, and progress.
     </div>
   </div>
 </section>
+
 <!-- Testimonial area end here -->
 
 
@@ -839,28 +821,12 @@ Our purpose is clear: protecting people, property, and progress.
           <div class="testimonial-block-four">
             <div class="swiper testimonial-slider-four">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <figure class="icon">
-                         <h4 class="text">Muscat</h4>
-                    <p class="text">Sultanate of Oman</p>
-                  </figure>
-                      <p class="text">
-                        Al Muzn Mall,
-3rd Floor - Office 301
-Al Mawaleh, North A’Seeb
-Muscat 101
-Sultanate of Oman
-Email: info@amanfec.com
-Phone: +968 2407 4744
-
-                      </p>
-                </div>
-                <div class="swiper-slide">
+                                <div class="swiper-slide">
                   <figure class="icon">
                         <h4 class="text">Riyadh</h4>
-                    <p class="text">Saudi Arabia</p>
+                    <p class="text" style="font-style: italic; opacity: 0.9;">Saudi Arabia</p>
                   </figure>
-                      <p class="text">
+                      <p class="text" style="font-size: 24px; opacity: 0.8;">
                         Abraj Tawyniya, North Tower,
 Ground Floor - Office 4
 Al Olaya Dist,
@@ -874,10 +840,27 @@ Phone: +966 126 555 488
                 </div>
                 <div class="swiper-slide">
                   <figure class="icon">
-                     <h4 class="text">Jeddah</h4>
-                    <p class="text">Saudi Arabia</p>
+                         <h4 class="text">Muscat</h4>
+                    <p class="text" style="font-style: italic; opacity: 0.9;">Sultanate of Oman</p>
                   </figure>
-                      <p class="text">
+                      <p class="text" style="font-size: 24px; opacity: 0.8;">
+                        Al Muzn Mall,
+3rd Floor - Office 301
+Al Mawaleh, North A’Seeb
+Muscat 101
+Sultanate of Oman
+Email: info@amanfec.com
+Phone: +968 2407 4744
+
+                      </p>
+                </div>
+
+                <div class="swiper-slide">
+                  <figure class="icon">
+                     <h4 class="text">Jeddah</h4>
+                    <p class="text" style="font-style: italic; opacity: 0.9;">Saudi Arabia</p>
+                  </figure>
+                      <p class="text" style="font-size: 24px; opacity: 0.8;">
                         King Road Tower,
 18th Floor - Office 1801
 Ash Shati Dist,
@@ -892,9 +875,9 @@ Phone: +966 126 555 488
                  <div class="swiper-slide">
                   <figure class="icon">
                      <h4 class="text">Al Khobar</h4>
-                    <p class="text">Saudi Arabia</p>
+                    <p class="text" style="font-style: italic; opacity: 0.9;">Saudi Arabia</p>
                   </figure>
-                      <p class="text">
+                      <p class="text" style="font-size: 24px; opacity: 0.8;">
                         Al Jarbou Tower
 Ground Floor - Office G01
 Al Aqrabiyah Dist,
@@ -909,9 +892,9 @@ Phone: +966 13 66 333 06
                  <div class="swiper-slide">
                   <figure class="icon">
                        <h4 class="text">Abu Dhabi</h4>
-                    <p class="text">United Arab Emirates</p>
+                    <p class="text" style="font-style: italic; opacity: 0.9;">United Arab Emirates</p>
                   </figure>
-                      <p class="text">
+                      <p class="text" style="font-size: 24px; opacity: 0.8;">
                         Al Wahda City Tower
 20th Floor - Office 09
 Hazaa Bin Zayed the First Street,
@@ -926,18 +909,19 @@ Phone: +971 28 18 6717
             </div>
             <div class="swiper testimonial-slider-thumb-four">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="info">
-                    <h4 class="title">Muscat</h4>
-                    <p class="sub-title">Sultanate of Oman</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
+                                <div class="swiper-slide">
                   <div class="info">
                     <h4 class="title">Riyadh</h4>
                     <p class="sub-title">Saudi Arabia</p>
                   </div>
                 </div>
+                <div class="swiper-slide">
+                  <div class="info">
+                    <h4 class="title">Muscat</h4>
+                    <p class="sub-title" >Sultanate of Oman</p>
+                  </div>
+                </div>
+
                 <div class="swiper-slide">
                   <div class="info">
                     <h4 class="title">Jeddah</h4>
@@ -965,9 +949,8 @@ Phone: +971 28 18 6717
     </section>
     <!-- Testimonil area end here -->
 
-
 <!-- Blog area start here -->
-   <section class="blog-section-two pt-120 pb-120">
+<section class="blog-section-two pt-120 pb-120">
   <div class="container">
     <div class="sec-title mb-50">
       <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Insights & News</h6>
@@ -977,38 +960,203 @@ Phone: +971 28 18 6717
     </div>
 
     <div class="row g-4">
-  @foreach($latestNews as $news)
-
-
+      @foreach($latestNews as $news)
       <div class="col-md-6 col-xl-4 wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
-        <div class="blog-block-two">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image">
-                <img src="{{ asset('storage/' . $news->cover_image) }}" alt="Fire Strategy">
-
-              </figure>
-            </div>
-            <div class="content-box">
-
-              <h4 class="title"><a href="{{ route('news.details', $news->slug) }}">{{ $news->title }}</a></h4>
-              <a class="btn-one-rounded mt-30" href="{{ route('news.details', $news->slug) }}">Read More <i class="fa-solid fa-arrow-right"></i></a>
-
-            </div>
+        <article class="blog-block-two">
+          <div class="image-box">
+            <figure class="image">
+              <img src="{{ asset('storage/' . $news->cover_image) }}" alt="{{ $news->title }}">
+            </figure>
           </div>
-        </div>
+
+          <div class="content-box">
+            <h4 class="title">
+              <a class="stretched-link" href="{{ route('news.details', $news->slug) }}">{{ $news->title }}</a>
+            </h4>
+            <a class="btn-one-rounded" href="{{ route('news.details', $news->slug) }}">
+              Read More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
       </div>
+      @endforeach
 
-@endforeach
-<div class="text-center">
-    <a class="btn-one-light wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" href="{{ route('News') }}">
-        Show All
-    </a>
-</div>
-
+      <div class="text-center">
+        <a class="btn-one-light wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" href="{{ route('News') }}">
+          Show All
+        </a>
+      </div>
     </div>
   </div>
 </section>
+<!-- Blog area end here -->
 
-    <!-- Blog area end here -->
+@push('styles')
+<style>
+/* ====== البطاقة الطولية بالصورة ====== */
+.blog-block-two{
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  /* نسبة طولية ثابتة 3:4 */
+  aspect-ratio: 3 / 4;
+  /* Fallback للمتصفحات القديمة: يحاكي النسبة */
+  height: 0;
+  padding-top: calc(100% * (4 / 3)); /* 4/3 = (الارتفاع/العرض) */
+}
+@supports (aspect-ratio: 3 / 4){
+  .blog-block-two{
+    height: auto;
+    padding-top: 0;
+  }
+}
+
+/* ظل وحدود خفيفة */
+.blog-block-two{
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+.blog-block-two:hover{
+  transform: translateY(-4px);
+  border-color: rgba(214,40,40,0.45);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* الصورة تملأ الكرت بالكامل */
+.blog-block-two .image-box,
+.blog-block-two .image-box .image,
+.blog-block-two .image-box img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.blog-block-two .image-box img{
+  object-fit: cover;     /* يملأ مع القص */
+  object-position: center;
+  display: block;
+  transform: scale(1.01);
+  transition: transform .45s ease;
+}
+.blog-block-two:hover .image-box img{
+  transform: scale(1.06); /* تكبير بسيط عند المرور */
+}
+
+/* تدرّج أسفل لتوضيح النص */
+.blog-block-two .content-box{
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 16px 16px 14px;
+  background: linear-gradient(to top, rgba(0,0,0,0.72), rgba(0,0,0,0.45), transparent 70%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* العنوان: احجز 3 أسطر دائمًا */
+.blog-block-two .content-box .title{
+  --lines: 3;
+  line-height: 1.35;
+  margin: 0;
+  font-size: 1.05rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--lines);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: calc(1.35em * var(--lines)); /* يحجز ارتفاع 3 أسطر */
+}
+.blog-block-two .content-box .title a{
+  color: #fff;
+  text-decoration: none;
+}
+
+/* الزر */
+.blog-block-two .content-box .btn-one-rounded{
+  align-self: flex-start;
+  margin-top: 6px;
+  background: #d62828;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 22px;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background .3s ease, transform .2s ease;
+}
+.blog-block-two .content-box .btn-one-rounded:hover{
+  background: #b81f1f;
+  transform: translateY(-1px);
+}
+
+/* اجعل <figure> بلا مسافات افتراضية */
+.blog-block-two .image-box figure{
+  margin: 0;
+}
+
+/* لجعل الكرت بأكمله قابل للنقر عبر .stretched-link (Bootstrap-like سلوك إن أردت) */
+.blog-block-two .stretched-link::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+/* العنوان مع خلفية حمراء شفافة وحدود ناعمة */
+.blog-block-two .content-box .title {
+  --lines: 3;
+  line-height: 1.4;
+  margin: 0;
+  font-size: 1.3rem; /* تكبير الخط */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--lines);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: calc(1.4em * var(--lines));
+}
+
+/* الزر بنفس النمط */
+.blog-block-two .content-box .btn-one-rounded {
+  align-self: flex-start;
+  margin-top: 6px;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 22px;
+  font-size: 15px; /* تكبير الخط */
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background .3s ease, transform .2s ease;
+}
+.blog-block-two .content-box .btn-one-rounded:hover {
+  background: rgba(184, 31, 31, 0.85); /* أغمق عند المرور */
+  transform: translateY(-1px);
+}
+/* الصندوق السفلي مع تدرج غامق */
+.blog-block-two .content-box {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 16px 16px 14px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,   /* أسفل غامق جدًا */
+    rgba(0, 0, 0, 0.6) 40%,   /* تدرج متوسط */
+    rgba(0, 0, 0, 0.3) 70%,   /* شبه شفاف */
+    transparent 100%          /* شفاف تمامًا */
+  );
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+</style>
+@endpush
+
+
 </x-app.app-layout>

@@ -25,7 +25,7 @@
       </div>
       <div class="col-lg-12">
         <div class="services-details__content position-relative my-5">
-          <img src="{{ asset('build/images/resource/service-details.jpg') }}" alt="" />
+          <img src="{{ asset('build/images/resource/person-working-building-construction_23-2149184977.jpg') }}" alt="" />
 
         </div>
       </div>
@@ -34,8 +34,8 @@
     <div class="row align-items-lg-center">
       <div class="col-lg-6">
         <div class="sec-title mb-40">
-          <h6 class="sub-title wow fadeInUp bg-transparent ps-0" data-wow-delay="00ms" data-wow-duration="1500ms">Service Details</h6>
-          <h2 class="title mb-30 wow splt-txt" data-splitting>Product Devlopment <br class="d-none d-lg-block"> For Butter Business</h2>
+          <h6 class="sub-title wow fadeInUp bg-transparent ps-0" data-wow-delay="00ms" data-wow-duration="1500ms">Join Our Team</h6>
+          <h2 class="title mb-30 wow splt-txt" data-splitting>Shape the future of fire and life safety <br class="d-none d-lg-block"> explore careers.</h2>
         </div>
       </div>
     </div>

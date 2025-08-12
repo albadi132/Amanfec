@@ -27,7 +27,7 @@
       <div class="col-lg-6">
         <div class="project-details__top mt-lg-5">
           <div class="text mb-40">
-            At Aman Fire Engineering Consultancy, we provide a wide range of specialized services in fire protection engineering, code compliance, and safety consulting. Our offerings are designed to support each phase of your project — from design and modeling to on-site inspections, testing, and risk assessments — ensuring full regulatory compliance and long-term safety assurance.
+           At Aman Fire Engineering Consultancy, we provide a wide range of specialized services in fire protection engineering, code compliance, and safety consulting. Our offerings are designed to support each phase of your project, from design and modeling to on-site inspections, testing, and risk assessments, ensuring full regulatory compliance and long-term safety assurance.
           </div>
         </div>
       </div>
@@ -166,6 +166,7 @@
 	<!-- End Services Section -->
 
     <!-- Choose area start here -->
+      <!--
   <section class="choose-section pt-120 pb-120">
   <div class="container">
     <div class="row g-4">
@@ -191,7 +192,7 @@
           </div>
 
           <div class="tab-content mt-30" id="myTabContent">
-            <!-- About Us -->
+
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <div class="content-box">
                 <p class="text">
@@ -211,7 +212,6 @@
               </div>
             </div>
 
-            <!-- Our Mission -->
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
               <div class="content-box">
                 <p class="text">
@@ -231,7 +231,7 @@
               </div>
             </div>
 
-            <!-- Our Vision -->
+
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
               <div class="content-box">
                 <p class="text">
@@ -254,7 +254,7 @@
         </div>
       </div>
 
-      <!-- Image Column -->
+
       <div class="col-xl-6 image-column">
         <div class="inner-column">
           <figure class="image">
@@ -291,7 +291,7 @@
     </div>
   </div>
 </section>
-
+-->
     <!-- Choose area end here -->
 
 </x-app.app-layout>
