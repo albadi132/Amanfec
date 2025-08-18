@@ -37,15 +37,62 @@
                 </p>
               @endif
 
-              <div class="blog-details__text-2">
-                {!! $news->content !!}
-              </div>
+               <div id="job-desc-shadow" data-html='@json($news->content)'></div>
             </div>
+
+
 
           </div>
         </div>
       </div>
     </div>
   </section>
+
+ @push('style')
+
+<style>
+  .services-details__content.job-desc,
+  .services-details__content.job-desc * {
+    all: revert;
+  }
+
+  .services-details__content.job-desc img { max-width:100%; height:auto; }
+  .services-details__content.job-desc a { color:#0d6efd; text-decoration:underline; }
+</style>
+@endpush
+@push('scripts')
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const host = document.getElementById('job-desc-shadow');
+  // فك ترميز JSON (سيحوّل \u003C إلى < فعلي)
+  const html = JSON.parse(host.getAttribute('data-html') || '""');
+
+  const root = host.attachShadow({ mode: 'open' });
+  root.innerHTML = `
+    <style>
+      :host { all: initial; font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; color:#222; line-height:1.6; }
+      h1,h2,h3{ margin:.6em 0 .3em; line-height:1.25; }
+      p{ margin:.5em 0; }
+      ul,ol{ padding-left:1.25rem; margin:.5em 0; }
+      blockquote{ border-inline-start:4px solid #e5e7eb; margin:1em 0; padding:.5em 1em; color:#555; background:#fafafa; }
+      img{ max-width:100%; height:auto; }
+      pre,code{ font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace; }
+      table{ border-collapse:collapse; width:100%; margin:1em 0; }
+      th,td{ border:1px solid #e5e7eb; padding:.5em .6em; vertical-align:top; }
+      a{ color:#0d6efd; text-decoration:underline; }
+    </style>
+    <div class="content"></div>
+  `;
+  root.querySelector('.content').innerHTML = html;
+
+  // حماية روابط داخل الوصف
+  root.querySelectorAll('a[href]').forEach(a => {
+    a.setAttribute('target','_blank');
+    a.setAttribute('rel','noopener noreferrer');
+  });
+});
+</script>
+
+@endpush
 
 </x-app.app-layout>

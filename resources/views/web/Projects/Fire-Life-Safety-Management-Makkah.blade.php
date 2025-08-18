@@ -29,12 +29,12 @@
               <!-- عنوان منسق + تاغات الموقع -->
               <header class="project-header">
                 <h2 class="project-title">
-                  Comprehensive Fire & Life Safety System Design & Construction Management
+                  Fire and Life Safety System Evaluation and Construction Administration
                 </h2>
 
                 <div class="project-tags">
                   <span class="tag tag--city"><i class="fa-solid fa-location-dot"></i> Makkah</span>
-                  <span class="tag tag--region">Makkah Province</span>
+
                   <span class="tag tag--country">Saudi Arabia</span>
                 </div>
               </header>

@@ -233,45 +233,6 @@
     <div class="row g-0 w-100">
       <div class="col-xl-8 left-column order-2 order-xl-1">
 
-        <!-- Contact Info -->
-        <div class="footer-top">
-          <div class="row g-4">
-            <div class="col-lg-4">
-              <div class="info-item">
-                <ul>
-                  <li><i class="fa-sharp fa-solid fa-phone"></i></li>
-                  <li>
-                    <span style="font-size: 16px; font-weight: bold">Call Us:</span>
-                    <h5 class="title" style="font-size: 14px;font-weight: normal">+968 2412 1366</h5>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="info-item">
-                <ul>
-                  <li><i class="fa-sharp fa-solid fa-envelope"></i></li>
-                  <li>
-                    <span style="font-size: 16px; font-weight: bold">Email Us:</span>
-                    <h5 class="title" style="font-size: 14px;font-weight: normal"><a href="mailto:info@amanfec.com">info@amanfec.com</a></h5>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="info-item">
-                <ul>
-                  <li><i class="fa-sharp fa-solid fa-location-dot"></i></li>
-                  <li>
-                    <span style="font-size: 16px; font-weight: bold">Countries Served:</span>
-                    <h5 class="title" style="font-size: 14px;font-weight: normal">Oman, KSA, UAE, Qatar, Bahrain, Kuwait, Iraq</h5>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <!-- Footer Links -->
         <div class="widgets-section">
           <div class="row g-4">
@@ -305,14 +266,20 @@
               </div>
             </div>
 
-            <div class="col-lg-4 footer-column">
-              <div class="footer-widget links-widget">
-                <h4 class="widget-title">About Aman</h4>
-               <p style="color: #ffffffff;">
-              Aman provides expert fire protection and safety consultancy across the GCC, delivering reliable and compliant engineering solutions.
-               </p>
-              </div>
-            </div>
+ <div class="col-lg-4 footer-column">
+  <div class="footer-widget links-widget">
+    <h4 class="widget-title">Our Offices</h4>
+    <p class="mb-3 text-white-50">
+      Find the nearest Aman office across Riyadh, Jeddah, Al Khobar, Muscat, and Abu Dhabi.
+      View addresses and directions.
+    </p>
+    <div class="input-feild">
+      <a class="btn-one-rounded" href="{{ route('offices') }}" style="color: #fff; font-weight: bold;">
+        Find an office <i class="fa-regular fa-angle-right"></i>
+      </a>
+    </div>
+  </div>
+</div>
           </div>
         </div>
 

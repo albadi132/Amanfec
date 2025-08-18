@@ -2,7 +2,7 @@
 
 <html
   lang="en"
-  class="dark-style layout-navbar-fixed layout-menu-fixed layout-compact"
+  class="light-style layout-navbar-fixed layout-menu-fixed layout-compact"
   dir="ltr"
   data-theme="theme-default"
   data-assets-path="build/assets/assets/"
@@ -33,8 +33,8 @@
     <!-- <link rel="stylesheet" href="{{ asset('build/assets/assets/vendor/fonts/flag-icons.css')}}" /> -->
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="{{ asset('build/assets/assets/vendor/css/rtl/core-dark.css')}}" />
-    <link rel="stylesheet" href="{{ asset('build/assets/assets/vendor/css/rtl/theme-default-dark.css')}}" />
+    <link rel="stylesheet" href="{{ asset('build/assets/assets/vendor/css/rtl/core.css')}}" />
+    <link rel="stylesheet" href="{{ asset('build/assets/assets/vendor/css/rtl/theme-default.css')}}" />
     <link rel="stylesheet" href="{{ asset('build/assets/assets/css/demo.css')}}" />
 
     <!-- Vendors CSS -->
@@ -58,7 +58,7 @@
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
             <a href="/" class="app-brand-link">
-             <img style="width: 140px;height: 30px;"  src="{{ asset('build/images/logo/logo.png')}}" alt="">
+             <img style="width: 140px;"  src="{{ asset('build/images/logo/logo.png')}}" alt="">
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">

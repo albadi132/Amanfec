@@ -35,7 +35,7 @@
       <div class="col-xl-6 content-column">
         <div class="inner-column">
           <div class="sec-title">
-            <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">ABOUT AMAN</h6>
+            <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms" style="color: #fff; font-weight: bold;">ABOUT AMAN</h6>
             <h2 class="title wow splt-txt" data-splitting>
               Fire safety is not optional — it’s engineered into every decision we make.
             </h2>
@@ -216,7 +216,7 @@
         <div class="row g-5">
           <div class="col-xl-7 order-2 order-xl-1">
             <div class="sec-title mb-30">
-              <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Learning in Action</h6>
+              <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms" style="color: #fff; font-weight: bold;">Learning in Action</h6>
               <div class="flex-content">
                 <h2 class="title text-white wow splt-txt" data-splitting>Building Expertise <span class="font-weight-300">Shaping the Future</span></h2>
                 <div class="btn-wrp">

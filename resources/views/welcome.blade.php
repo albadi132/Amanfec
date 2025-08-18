@@ -23,12 +23,12 @@
           <div class="row g-0 align-items-end">
             <div class="col-lg-8 content-column">
               <div class="inner-column">
-                <h6 class="sub-title" data-animation="fadeInUp" data-delay=".3s" >Aman Fire Engineering & Safety Consultancy</h6>
+              <!--  <h6 class="sub-title" data-animation="fadeInUp" data-delay=".3s" >Aman Fire Engineering & Safety Consultancy</h6> -->
                 <h1 class="title" data-animation="fadeInUp" data-delay=".5s">Your Reliable
                   <span>Fire & Life Safety Partner</span>
                   Across the GCC
                 </h1>
-                <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="{{ route('Services') }}">Explore Our Services</a>
+                <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="{{ route('Services') }}" style="color: #fff; font-weight: bold;">Explore Our Services</a>
               </div>
             </div>
             <div class="col-lg-4">
@@ -46,12 +46,12 @@
           <div class="row g-0 align-items-end">
             <div class="col-lg-8 content-column">
               <div class="inner-column">
-                <h6 class="sub-title" data-animation="fadeInUp" data-delay=".3s">Your Safety, Our Priority</h6>
+               <!--  <h6 class="sub-title" data-animation="fadeInUp" data-delay=".3s">Your Safety, Our Priority</h6> -->
                 <h1 class="title" data-animation="fadeInUp" data-delay=".5s">Protecting
                   <span>Lives & Property</span>
                   Through Expertise
                 </h1>
-                <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="{{ route('ContactUs') }}">Get In Touch</a>
+                <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="{{ route('ContactUs') }}" style="color: #fff; font-weight: bold;">Get In Touch</a>
               </div>
             </div>
             <div class="col-lg-4">
@@ -69,12 +69,12 @@
           <div class="row g-0 align-items-end">
             <div class="col-lg-8 content-column">
               <div class="inner-column">
-                <h6 class="sub-title" data-animation="fadeInUp" data-delay=".3s">Over a Decade of Experience</h6>
+              <!--   <h6 class="sub-title" data-animation="fadeInUp" data-delay=".3s">Over a Decade of Experience</h6> -->
                 <h1 class="title" data-animation="fadeInUp" data-delay=".5s">Leading
                   <span>Fire Safety Consulting</span>
                   Across the Region
                 </h1>
-                <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="{{ route('ContactUs') }}">Schedule a Call</a>
+                <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="{{ route('ContactUs') }}" style="color: #fff; font-weight: bold;">Schedule a Call</a>
               </div>
             </div>
             <div class="col-lg-4">
@@ -114,6 +114,77 @@
     </section>
     @endif
 
+
+            <!-- Brand area start here -->
+    <section class="brand-section pt-120">
+      <div class="container">
+        <div class="outer-box">
+          <div class="sec-title mb-50">
+            <h6 class="title">CERTIFIED BY</h6>
+          </div>
+          <div class="swiper brand-slider">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="brand-block">
+                  <a href="#"><img src="{{ asset('build/images/brand/iso 2.png')}}" alt="iso 2.png" ></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="brand-block">
+                  <a href="#"><img src="{{ asset('build/images/brand/iso 2022.png')}}" alt="iso 2022.png" ></a>
+                </div>
+              </div>
+
+               <div class="swiper-slide">
+                <div class="brand-block">
+                  <a href="#"><img src="{{ asset('build/images/brand/iso.png')}}" alt="iso.png" ></a>
+                </div>
+              </div>
+
+               <div class="swiper-slide">
+                <div class="brand-block">
+                  <a href="#"><img src="{{ asset('build/images/brand/nafi.png')}}" alt="nafi.png" ></a>
+                </div>
+              </div>
+
+               <div class="swiper-slide">
+                <div class="brand-block">
+                  <a href="#"><img src="{{ asset('build/images/brand/nfpa 2.png')}}" alt="nfpa 2.png" ></a>
+                </div>
+              </div>
+
+               <div class="swiper-slide">
+                <div class="brand-block">
+                  <a href="#"><img src="{{ asset('build/images/brand/nfpa.png')}}" alt="nfpa.png" ></a>
+                </div>
+              </div>
+
+               <div class="swiper-slide">
+                <div class="brand-block">
+                  <a href="#"><img src="{{ asset('build/images/brand/oman.png')}}" alt="oman.png" ></a>
+                </div>
+              </div>
+
+               <div class="swiper-slide">
+                <div class="brand-block">
+                  <a href="#"><img src="{{ asset('build/images/brand/saudi.png')}}" alt="saudi.png" ></a>
+                </div>
+              </div>
+
+               <div class="swiper-slide">
+                <div class="brand-block">
+                  <a href="#"><img src="{{ asset('build/images/brand/uae.png')}}" alt="uae.png" ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About area end here -->
+
      <!-- About area start here -->
     <section class="about-section-two paralax__animation pt-120 pb-120">
       <div class="container">
@@ -124,8 +195,8 @@
                 <img data-tilt data-tilt-max="3" src="{{ asset('build/images/about/about-two-image.png')}}" alt="Image">
 
                 <div class="info2 wow bounceInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-                  <h2 class="title"><span>10</span>+</h2>
-                  <p class="sub-title">Years Of Experience <img src="{{ asset('build/images/about/about-two-info-line.png')}}" alt="Image">
+                  <h2 class="title" style="color:white;"><span style="color:white;">10</span>+</h2>
+                  <p class="sub-title" style="color:white;">Years Of Experience <img src="{{ asset('build/images/about/about-two-info-line.png')}}" alt="Image">
                   </p>
                 </div>
               </figure>
@@ -145,63 +216,43 @@
    <div class="info mt-50 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                            <div class="user">
 
-                  <h6 class="title">Accreditations & Certifications<img src="{{ asset('build/images/about/about-two-line.png')}}" alt="Image"></h6>
+                  <h6 class="title">Approved Service Providers<img src="{{ asset('build/images/about/about-two-line.png')}}" alt="Image"></h6>
                   </div>
                 </div>
 
    <div class="info mt-20 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                 <div class="item">
                   <div class="icon">
-                    <img  src="{{ asset('build/images/brand/Picture1.png')}}" alt="Icon">
+                    <img  src="{{ asset('build/images/brand/aramco.png')}}" alt="Icon">
                   </div>
                 </div>
                 <div class="item">
                   <div class="icon">
-                    <img  src="{{ asset('build/images/brand/Picture2.png')}}" alt="Icon">
+                    <img  src="{{ asset('build/images/brand/diriyah.png')}}" alt="Icon">
                   </div>
                 </div>
                 <div class="item">
                   <div class="icon">
-                    <img  src="{{ asset('build/images/brand/Picture3.png')}}" alt="Icon">
+                    <img  src="{{ asset('build/images/brand/qiddya.png')}}" alt="Icon">
                   </div>
                 </div>
                  <div class="item">
                   <div class="icon">
-                    <img  src="{{ asset('build/images/brand/Picture4.png')}}" alt="Icon">
+                    <img  src="{{ asset('build/images/brand/NEOM.png')}}" alt="Icon">
                   </div>
+                </div>
+ <div class="item">
+                  <div class="icon">
+                    <img  src="{{ asset('build/images/brand/sabic.png')}}" alt="Icon">
+                  </div>
+                </div>
 
-                </div>
-                </div>
-                   <div class="info mt-10 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                <div class="item">
+                 <div class="item">
                   <div class="icon">
-                    <img  src="{{ asset('build/images/brand/Picture5.png')}}" alt="Icon">
+                    <img  src="{{ asset('build/images/brand/_salogos.org-شعار-الكهرباء (1).png')}}" alt="Icon">
                   </div>
                 </div>
-                <div class="item">
-                  <div class="icon">
-                    <img  src="{{ asset('build/images/brand/Picture6.png')}}" alt="Icon">
-                  </div>
                 </div>
-                <div class="item">
-                  <div class="icon">
-                    <img  src="{{ asset('build/images/brand/Picture7.png')}}" alt="Icon">
-                  </div>
-                </div>
-                  <div class="item">
-                  <div class="icon">
-                    <img  src="{{ asset('build/images/brand/Picture8.png')}}" alt="Icon">
-                  </div>
-                </div>
- </div>
-    <div class="info mt-10 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-        </div>
-<div class="item">
-                  <div class="icon">
-                    <img  src="{{ asset('build/images/brand/Picture9.png')}}" alt="Icon">
-                  </div>
-</div>
-
 
                 <div class="info mt-50 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                   <a class="btn-two-rounded" href="{{ route('AboutUs') }}">more about <i class="fa-regular fa-angle-right"></i></a>
@@ -214,9 +265,10 @@
         </div>
       </div>
     </section>
-    <!-- About area end here -->
 
-    <!-- About area start here -->
+
+
+    <!-- About area start here
     <section class="about-section pt-120 pb-120 paralax__animation">
       <div class="container">
         <div class="row g-5">
@@ -291,7 +343,7 @@ We don’t just follow safety codes, we help shape them. Our purpose is clear: p
           </div>
       </div>
     </section>
-    <!-- About area end here -->
+     About area end here -->
 
     <!-- Service area start here -->
   <section class="service-section pt-120 pb-120">
@@ -303,10 +355,10 @@ We don’t just follow safety codes, we help shape them. Our purpose is clear: p
   </div>
   <div class="container">
     <div class="sec-title mb-50">
-      <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1000ms">Our Services</h6>
+      <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1000ms" style="color: #fff; font-weight: bold;">Our Services</h6>
       <div class="flex-content">
         <h2 class="title wow splt-txt" data-splitting>End-to-End Fire Safety Engineering<br>Solutions, Proven Results. </h2>
-        <a class="btn-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms" href="{{ route('Services') }}">Explore All Services</a>
+        <a class="btn-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms" href="{{ route('Services') }}" style="color: #fff; font-weight: bold;">Explore All Services</a>
 
       </div>
     </div>
@@ -328,7 +380,7 @@ We don’t just follow safety codes, we help shape them. Our purpose is clear: p
   <span class="number">01</span>
                 <h4 class="title"><a href="{{ route('Code-Consulting') }}">Code Consulting</a></h4>
                 <p class="text">
-                  Comprehensive code compliance services including NFPA, SBC, and GCC reviews, performance-based design, and peer consultations.
+                    Comprehensive code compliance services including NFPA, SBC, and GCC reviews, performance-based design, and peer consultations.
 </p>
               </div>
             </div>
@@ -473,7 +525,7 @@ We don’t just follow safety codes, we help shape them. Our purpose is clear: p
     <section class="case-section have-combine pt-120 pb-120">
       <div class="outer-box">
         <div class="sec-title center mb-50">
-          <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Case study</h6>
+          <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms" style="color: #fff; font-weight: bold;">Case study</h6>
           <h2 class="title wow splt-txt" data-splitting>Showcasing Project & Solutions <br> for Clients case study.</h2>
         </div>
        <div class="swiper case-slider">
@@ -633,7 +685,7 @@ We don’t just follow safety codes, we help shape them. Our purpose is clear: p
     </section>
     <!-- Testimonial area end here -->
 
-    <!-- Team area start here -->
+    <!-- Team area start here
  <section class="team-section pt-120 pb-120">
   <div class="team-shape wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
     <img class="sway__animation" src="{{ asset('build/images/shape/team-shape.png')}}" alt="Image">
@@ -677,9 +729,9 @@ We don’t just follow safety codes, we help shape them. Our purpose is clear: p
 
 </section>
 
+ -->
 
-
-    <!-- Growth area start here -->
+    <!-- Growth area start here
   <section class="growth-section pt-120 pb-120" data-background="{{ asset('build/images/bg/growth-bg.jpg')}}">
   <div class="sec-shape">
     <img class="sway_Y__animation" src="{{ asset('build/images/shape/growth-shape.png')}}" alt="Image">
@@ -694,7 +746,7 @@ We don’t just follow safety codes, we help shape them. Our purpose is clear: p
     </div>
     <div class="row g-5">
 
-      <!-- 1 -->
+
       <div class="col-md-6 col-xl-4 wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
         <div class="growth-block">
           <div class="pie-graph">
@@ -710,7 +762,7 @@ We don’t just follow safety codes, we help shape them. Our purpose is clear: p
         </div>
       </div>
 
-      <!-- 2 -->
+
       <div class="col-md-6 col-xl-4 wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
         <div class="growth-block">
           <div class="pie-graph">
@@ -726,7 +778,7 @@ We don’t just follow safety codes, we help shape them. Our purpose is clear: p
         </div>
       </div>
 
-      <!-- 3 -->
+
       <div class="col-md-6 col-xl-4 wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
         <div class="growth-block">
           <div class="pie-graph">
@@ -746,7 +798,7 @@ We don’t just follow safety codes, we help shape them. Our purpose is clear: p
   </div>
 </section>
 
-
+-->
 
     <!-- Team area end here -->
 
@@ -808,7 +860,7 @@ We don’t just follow safety codes, we help shape them. Our purpose is clear: p
 <!-- Testimonial area end here -->
 
 
-    <!-- Testimonil area start here -->
+    <!-- Testimonil area start here
     <section class="testimonial-section-four paralax__animation">
       <div class="map">
         <img src="{{ asset('build/images/shape/testimonial-four-map.png')}}" alt="Image">
@@ -947,13 +999,13 @@ Phone: +971 28 18 6717
         </div>
       </div>
     </section>
-    <!-- Testimonil area end here -->
+  Testimonil area end here -->
 
 <!-- Blog area start here -->
 <section class="blog-section-two pt-120 pb-120">
   <div class="container">
     <div class="sec-title mb-50">
-      <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Insights & News</h6>
+      <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms" style="color: #fff; font-weight: bold;">Insights & News</h6>
       <div class="flex-content">
         <h2 class="title wow splt-txt" data-splitting>Fire Safety Consulting <br> Updates & Insights</h2>
       </div>
@@ -1154,6 +1206,88 @@ Phone: +971 28 18 6717
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+/* جعل الأعمدة تتمدّد بالتساوي داخل الصف */
+.team-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-section .col-md-6.col-xl-3 {
+  display: flex;
+}
+.team-section .team-block,
+.team-section .team-block .inner-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* تثبيت مساحة الصورة لمنع تغيّر الارتفاع */
+.team-section .image {
+  aspect-ratio: 4 / 5; /* عدّل النسبة إن لزم لتطابق تصميمك الحالي */
+  overflow: hidden;
+}
+.team-section .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* توحيد ارتفاع صندوق المحتوى عبر حساب يعتمد على عدد الأسطر */
+:root {
+  --title-font-size: 1.6rem;   /* نفس حجم .title الحالي */
+  --title-line-height: 1.3;      /* إن كان لديك قيمة مختلفة استخدمها */
+  --title-lines: 2;              /* أقصى أسطر للاسم */
+
+  --sub-font-size: 0.95rem;      /* نفس حجم .sub-title الحالي (قرّبته) */
+  --sub-line-height: 1.4;
+  --sub-lines: 3;                /* أقصى أسطر للمسمى */
+
+  --content-padding: 1.25rem;    /* مجموع الحشوات داخل content-box تقريبًا */
+}
+
+/* صندوق المحتوى يأخذ حدًا أدنى موحّدًا */
+.team-section .content-box {
+ display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* النصوص تبدأ من الأعلى */
+  min-height: calc(
+    (var(--title-lines) * var(--title-font-size) * var(--title-line-height)) +
+    (var(--sub-lines)   * var(--sub-font-size)   * var(--sub-line-height)) +
+    var(--content-padding)
+  );
+}
+
+/* قصّ النص لعدد أسطر محدّد لمنع تمدّد البطاقة */
+.team-section .content-box .title,
+.team-section .content-box .sub-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.team-section .content-box .title {
+  -webkit-line-clamp: var(--title-lines);
+  line-height: var(--title-line-height);
+  font-size: var(--title-font-size);
+  margin-bottom: 0.35rem; /* عدّل حسب تصميمك */
+}
+
+.team-section .content-box .sub-title {
+  -webkit-line-clamp: var(--sub-lines);
+  line-height: var(--sub-line-height);
+  font-size: var(--sub-font-size);
+}
+.team-section .content-box .title a {
+  color: inherit; /* يحافظ على اللون الأساسي الحالي */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.team-section .team-block:hover .content-box .title a {
+  color: #d62828;
 }
 </style>
 @endpush

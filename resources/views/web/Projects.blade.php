@@ -29,8 +29,8 @@
             </div>
             <div class="content-box">
               <h4 class="title"><a href="{{ route('Fire-Protection-Life-Safety-Riyadh') }}">Fire Protection & Life Safety Management – Riyadh</a></h4>
-              <p>Comprehensive supervision and design review for fire systems during major facility construction including Ramadan and Hajj periods.</p>
-              <a class="btn-one-rounded mt-30" href="{{ route('Fire-Protection-Life-Safety-Riyadh') }}">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              <p class="project-desc">Comprehensive supervision and design review for fire systems during major facility construction including Ramadan and Hajj periods.</p>
+              <a class="btn-one-rounded mt-30" href="{{ route('Fire-Protection-Life-Safety-Riyadh') }}" style="color: #fff; font-weight: bold;">Read More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -47,8 +47,8 @@
             </div>
             <div class="content-box">
               <h4 class="title"><a href="{{ route('Life-Safety-System-Review-Riyadh') }}">Life Safety System Review & Construction Support – Riyadh</a></h4>
-              <p>Design validation and on-site supervision ensuring code-compliant fire systems for large-scale development.</p>
-              <a class="btn-one-rounded mt-30" href="{{ route('Life-Safety-System-Review-Riyadh') }}">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              <p class="project-desc">Design validation and on-site supervision ensuring code-compliant fire systems for large-scale development.</p>
+              <a class="btn-one-rounded mt-30" href="{{ route('Life-Safety-System-Review-Riyadh') }}" style="color: #fff; font-weight: bold;">Read More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -65,8 +65,8 @@
             </div>
             <div class="content-box">
               <h4 class="title"><a  href="{{ route('Fire-Safety-Design-Review-Jeddah') }}">Fire Safety Design Review – Jeddah</a></h4>
-              <p>Early-stage design assessment to ensure safety systems meet regulatory standards for a major development.</p>
-              <a class="btn-one-rounded mt-30"  href="{{ route('Fire-Safety-Design-Review-Jeddah') }}">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              <p class="project-desc">Early-stage design assessment to ensure safety systems meet regulatory standards for a major development.</p>
+              <a class="btn-one-rounded mt-30"  href="{{ route('Fire-Safety-Design-Review-Jeddah') }}" style="color: #fff; font-weight: bold;">Read More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -83,8 +83,8 @@
             </div>
             <div class="content-box">
               <h4 class="title"><a  href="{{ route('Multi-Stage-Fire-Safety-Riyadh') }}">Multi-Stage Fire Safety Design Review – Riyadh</a></h4>
-              <p>Phased fire safety system design validation from concept through detailed design stages.</p>
-              <a class="btn-one-rounded mt-30"  href="{{ route('Multi-Stage-Fire-Safety-Riyadh') }}">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              <p class="project-desc">Phased fire safety system design validation from concept through detailed design stages.</p>
+              <a class="btn-one-rounded mt-30"  href="{{ route('Multi-Stage-Fire-Safety-Riyadh') }}" style="color: #fff; font-weight: bold;">Read More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -101,8 +101,8 @@
             </div>
             <div class="content-box">
               <h4 class="title"><a  href="{{ route('Fire-Safety-Smoke-Modeling-AlUla') }}">Fire Safety & Smoke Modeling – AlUla</a></h4>
-              <p>Integrated fire system design review and CFD-based smoke control modeling for enhanced safety.</p>
-              <a class="btn-one-rounded mt-30" href="{{ route('Fire-Safety-Smoke-Modeling-AlUla') }}">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              <p class="project-desc">Integrated fire system design review and CFD-based smoke control modeling for enhanced safety.</p>
+              <a class="btn-one-rounded mt-30" href="{{ route('Fire-Safety-Smoke-Modeling-AlUla') }} style="color: #fff; font-weight: bold;"">Read More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -119,8 +119,8 @@
             </div>
             <div class="content-box">
               <h4 class="title"><a href="{{ route('Fire-Life-Safety-Management-Makkah') }}">End-to-End Fire & Life Safety Management – Makkah</a></h4>
-              <p>Full lifecycle FLS system planning and execution, from concept to final Civil Defense approval.</p>
-              <a class="btn-one-rounded mt-30" href="{{ route('Fire-Life-Safety-Management-Makkah') }}">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              <p class="project-desc">Full lifecycle FLS system planning and execution, from concept to final Civil Defense approval.</p>
+              <a class="btn-one-rounded mt-30" href="{{ route('Fire-Life-Safety-Management-Makkah') }}" style="color: #fff; font-weight: bold;">Read More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -135,4 +135,37 @@
      	<!-- News Section -->
 
 	<!--End News Section -->
+  @push('styles')
+    <style>
+  /* جعل محتوى البطاقة عمودي مرن ليثبّت الزر بأسفل */
+  .blog-block-two .content-box{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+  }
+
+  /* وصف محدود بـ 4 أسطر مع ارتفاع ثابت */
+  .blog-block-two .content-box .project-desc{
+    --lh: 1.6;                 /* عدّلها لوغيّة الخط */
+    line-height: var(--lh);
+    display: -webkit-box;
+    -webkit-line-clamp: 4;      /* عدد الأسطر */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: calc(4 * 1em * var(--lh)); /* يحافظ على نفس الارتفاع حتى لو النص قصير */
+  }
+
+  /* زر اقرأ المزيد يلتصق بأسفل المحتوى */
+  .blog-block-two .content-box .btn-one-rounded{
+    margin-top: auto;
+  }
+
+  /*Fallback بسيط لمن لا يدعم -webkit-line-clamp */
+  @supports not (-webkit-line-clamp: 4){
+    .blog-block-two .content-box .project-desc{
+      max-height: calc(4 * 1em * var(--lh));
+    }
+  }
+</style>
+  @endpush
 </x-app.app-layout>

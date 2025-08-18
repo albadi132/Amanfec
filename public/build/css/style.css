@@ -95,7 +95,7 @@ License: copyright commercial
   --h4-font-weight: 700;
   --h5-font-weight: 700;
   --h6-font-weight: 700;
-  --container-width: 1344px;
+  --container-width: 1464px;
   --small-container-width: 1000px;
   --large-container-width: 1760px;
 }
@@ -3173,7 +3173,7 @@ Main Header
   display: block;
 }
 .logo a img {
-  width: 100%;
+/*  width: 100%; */
 }
 
 .header-span {
@@ -3293,7 +3293,7 @@ Main Header
   display: block;
 }
 .main-header .logo img {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
 }
 .main-header .main-box {
@@ -3801,7 +3801,7 @@ Main Header
 }
 .header-style-one .main-box, .header-style-four .main-box, .header-style-three .main-box, .header-style-two .main-box {
   background-color: var(--theme-color-light);
-  padding: 20px;
+  padding: 5px;
   max-width: 1450px;
   margin: 0 auto;
 }
@@ -6225,7 +6225,7 @@ Section Title
   overflow: hidden;
 }
 .about-section-two .content-column .inner-column .sec-title .text {
-  padding: 20px 30px;
+  padding: 1px 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -8752,7 +8752,7 @@ CONTACT Details
   z-index: -1;
   top: 0;
   right: 0;
-  width: 40%;
+  width: 25%;
   height: 100%;
   content: "";
   background-color: var(--theme-color2);

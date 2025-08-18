@@ -37,6 +37,9 @@ Route::get('/Careers/{id}', [CareerJobController::class, 'show'])->name('careers
 Route::get('/careers/{id}/apply', [CareerJobController::class, 'apply'])->name('career.apply');
 Route::post('/Careers/apply', [CareerJobController::class, 'submitApplication'])->name('careers.apply.submit');
 
+Route::get('/offices', [HomeController::class, 'offices'])->name('offices');
+
+
 Route::get('/Services/Code-Consulting',  [ServicesController::class, 'CodeConsulting'])->name('Code-Consulting');
 Route::get('/Services/Fire-Protection-Design', [ServicesController::class, 'FireProtectionDesign'])->name('Fire-Protection-Design');
 Route::get('/Services/Modeling-Services', [ServicesController::class, 'ModelingServices'])->name('Modeling-Services');
@@ -65,7 +68,7 @@ Route::middleware(['auth'])->group(function () {
 // مجموعة مسارات لوحة التحكم
 Route::middleware(['auth'])->prefix('dashboard')->name('dashboard.')->group(function () {
 
-    // مثال: /dashboard/team-members
+
     Route::resource('team-members', TeamMemberController::class);
     Route::resource('departments', DepartmentController::class);
     Route::resource('career-jobs', CareerJobController::class);
@@ -115,3 +118,4 @@ Route::get('/dashboard/job-applications/{jobApplication}/download-cv', [JobAppli
 });
 
 Route::patch('users/{user}/toggle', [\App\Http\Controllers\UserController::class, 'toggle'])->name('users.toggle');
+Route::get('/dashboard/job-applications/{jobApplication}/cover', [JobApplicationController::class,'downloadCover'])->name('dashboard.job-applications.downloadCover');

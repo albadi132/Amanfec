@@ -35,7 +35,7 @@
                 </h2>
                 <div class="project-tags">
                   <span class="tag tag--city"><i class="fa-solid fa-location-dot"></i> Riyadh</span>
-                  <span class="tag tag--region">Riyadh Province</span>
+
                   <span class="tag tag--country">Saudi Arabia</span>
                 </div>
               </header>

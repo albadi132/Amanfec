@@ -22,7 +22,7 @@
       <div class="container">
         <div class="outer-box">
           <div class="sec-title center mb-50">
-            <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Contact With Us Now</h6>
+            <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms" style="color: #fff; font-weight: bold;">Contact With Us Now</h6>
             <h2 class="title wow splt-txt" data-splitting>Where Every Inquiry Receives <br>Expert Attention</h2>
           </div>
                     @if (session('success'))
@@ -108,7 +108,7 @@
                     </div>
                   </div>
                   <div class="text-center">
-                    <button class="btn-one mt-4 mx-auto" data-animation="fadeInUp" data-delay=".8s"> Submit <i class="fa-solid fa-angle-right ms-2"></i></button>
+                    <button class="btn-one mt-4 mx-auto" data-animation="fadeInUp" data-delay=".8s" style="color: #fff; font-weight: bold;"> Submit <i class="fa-solid fa-angle-right ms-2"></i></button>
                   </div>
                 </div>
               </div>
@@ -130,7 +130,7 @@
     <!-- Contact area end here -->
 
 
-    <!-- Testimonil area start here -->
+    <!-- Testimonil area start here
     <section class="testimonial-section-four paralax__animation">
       <div class="map">
         <img src="{{ asset('build/images/shape/testimonial-four-map.png')}}" alt="Image">
@@ -267,6 +267,6 @@ Phone: +971 28 18 6717
         </div>
       </div>
     </section>
-    <!-- Testimonil area end here -->
+     Testimonil area end here -->
 
 </x-app.app-layout>

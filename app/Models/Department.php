@@ -13,4 +13,5 @@ class Department extends Model
     {
         return $this->hasMany(TeamMember::class);
     }
+    public function jobs() { return $this->hasMany(CareerJob::class); }
 }

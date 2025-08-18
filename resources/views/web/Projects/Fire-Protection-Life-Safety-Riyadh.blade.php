@@ -31,17 +31,17 @@
               <!-- عنوان + تاغات الموقع -->
               <header class="project-header">
                 <h2 class="project-title">
-                  Fire Protection & Life Safety Management for Large-Scale Construction – Riyadh
+                   Integrated Fire Protection and Life Safety Solutions for Large Developments
                 </h2>
                 <div class="project-tags">
                   <span class="tag tag--city"><i class="fa-solid fa-location-dot"></i> Riyadh</span>
-                  <span class="tag tag--region">Riyadh Province</span>
+
                   <span class="tag tag--country">Saudi Arabia</span>
                 </div>
               </header>
 
               <p class="blog-details__text-2 lead-paragraph">
-                This project involved comprehensive fire protection and life safety management during the construction of a major facility in Riyadh, Kingdom of Saudi Arabia. Given the critical operational periods—including Ramadan and Hajj seasons—our team ensured full regulatory compliance and safety readiness at every stage of the construction lifecycle.
+               This project involved comprehensive fire protection and life safety management during the construction of a major facility in Riyadh, Kingdom of Saudi Arabia. Given the critical operational periods including Ramadan and Hajj seasons, our team ensured full regulatory compliance and safety readiness at every stage of the construction lifecycle.
               </p>
 
               <h4 class="blog-details__subtitle mt-4">Supervision of Daily Construction Activities for Temporary Systems</h4>
