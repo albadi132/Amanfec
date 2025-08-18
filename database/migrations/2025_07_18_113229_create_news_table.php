@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void
     {
+         if (Schema::hasTable('news')) {
+            return; // الجدول موجود، تخطَّ الإنشاء
+        }
         Schema::create('news', function (Blueprint $table) {
             $table->id();
             $table->string('title');

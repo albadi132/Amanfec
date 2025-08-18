@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void
     {
+         if (Schema::hasTable('locations')) {
+            return; // الجدول موجود، تخطَّ الإنشاء
+        }
         Schema::create('locations', function (Blueprint $table) {
             $table->id();
             $table->string('country');                  // Saudi Arabia

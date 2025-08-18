@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void
     {
+         if (Schema::hasTable('job_application_educations')) {
+            return; // الجدول موجود، تخطَّ الإنشاء
+        }
         Schema::create('job_application_educations', function (Blueprint $table) {
             $table->id();
             $table->foreignId('job_application_id')->constrained('job_applications')->cascadeOnDelete();

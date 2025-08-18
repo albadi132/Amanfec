@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void
     {
+         if (Schema::hasTable('career_jobs')) {
+            return; // الجدول موجود، تخطَّ الإنشاء
+        }
         Schema::create('career_jobs', function (Blueprint $table) {
             $table->id();
             $table->string('title');
