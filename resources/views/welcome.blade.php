@@ -216,7 +216,7 @@
    <div class="info mt-50 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                            <div class="user">
 
-                  <h6 class="title">Approved Service Providers<img src="{{ asset('build/images/about/about-two-line.png')}}" alt="Image"></h6>
+                  <h6 class="title">Approved Service Providers & Recognised by Experts<img src="{{ asset('build/images/about/about-two-line.png')}}" alt="Image"></h6>
                   </div>
                 </div>
 
@@ -250,6 +250,24 @@
                  <div class="item">
                   <div class="icon">
                     <img  src="{{ asset('build/images/brand/_salogos.org-شعار-الكهرباء (1).png')}}" alt="Icon">
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="icon">
+                    <img  src="{{ asset('build/images/brand/modon.png')}}" alt="Icon">
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="icon">
+                    <img  src="{{ asset('build/images/brand/sce.png')}}" alt="Icon">
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="icon">
+                    <img  src="{{ asset('build/images/brand/sais.png')}}" alt="Icon">
                   </div>
                 </div>
                 </div>

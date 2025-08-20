@@ -26,7 +26,7 @@
             With a presence across Oman, Saudi Arabia, and the UAE, Aman Fire Engineering Consultants delivers advanced fire protection and life safety solutions for high-risk environments like high-rises, oil & gas, airports, and hospitals.
           </p>
           <div class="info mt-50 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-            <a class="btn-one-rounded" href="{{ route('ContactUs') }}">Contact Us <i class="fa-regular fa-arrow-up-right"></i></a>
+            <a class="btn-one-rounded" href="{{ route('ContactUs') }}" style="color: #fff; font-weight: bold;">Contact Us <i class="fa-regular fa-arrow-up-right"></i></a>
 
           </div>
         </div>
@@ -70,53 +70,61 @@
       <div class="container">
         <div class="outer-box">
 <div class="sec-title mb-50">
-            <h6 class="title">Accreditations & Certifications</h6>
+            <h6 class="title">CERTIFIED BY</h6>
           </div>
           <div class="swiper brand-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture1.png')}}" alt="Image" ></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/iso 2.png')}}" alt="iso 2.png" ></a>
                 </div>
               </div>
+
               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture2.png')}}" alt="Image" ></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/iso 2022.png')}}" alt="iso 2022.png" ></a>
                 </div>
               </div>
-              <div class="swiper-slide">
+
+               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture3.png')}}" alt="Image"  ></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/iso.png')}}" alt="iso.png" ></a>
                 </div>
               </div>
-              <div class="swiper-slide">
+
+               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture4.png')}}" alt="Image" ></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/nafi.png')}}" alt="nafi.png" ></a>
                 </div>
               </div>
-              <div class="swiper-slide">
+
+               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture5.png')}}" alt="Image"  ></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/nfpa 2.png')}}" alt="nfpa 2.png" ></a>
                 </div>
               </div>
-              <div class="swiper-slide">
+
+               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture6.png')}}" alt="Image" ></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/nfpa.png')}}" alt="nfpa.png" ></a>
                 </div>
               </div>
-              <div class="swiper-slide">
+
+               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture7.png')}}" alt="Image"  ></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/oman.png')}}" alt="oman.png" ></a>
                 </div>
               </div>
-              <div class="swiper-slide">
+
+               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture8.png')}}" alt="Image" ></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/saudi.png')}}" alt="saudi.png" ></a>
                 </div>
               </div>
-              <div class="swiper-slide">
+
+               <div class="swiper-slide">
                 <div class="brand-block">
-                  <a href="#"><img src="{{ asset('build/images/brand/Picture9.png')}}" alt="Image"  ></a>
+                  <a href="#"><img src="{{ asset('build/images/brand/uae.png')}}" alt="uae.png" ></a>
                 </div>
               </div>
 

@@ -22,7 +22,7 @@
           <div class="blog-details__left">
             <!-- صورة المشروع مع تحسينات بصرية -->
             <div class="blog-details__img mb-4 project-cover">
-              <img src="{{ asset('build/images/projects/case66.jpg') }}" alt="Fire and Life Safety Design – Makkah, KSA">
+              <img  src="{{ asset('build/images/projects/case66.jpg') }}" alt="Fire and Life Safety Design – Makkah, KSA">
             </div>
 
             <div class="blog-details__content">

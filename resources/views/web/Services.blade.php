@@ -35,14 +35,7 @@
 
     <div class="row">
 
-      <div class="col-lg-12">
-        <div class="services-details__content position-relative my-5">
-          <img src="{{ asset('build/images/resource/service-details.jpg')}}" alt="Aman Fire Engineering Services Overview" />
-          <div class="btn-wrp d-flex align-items-center">
-            <a class="video-btn playbtnanim wow fadeInLeft" data-wow-delay="700ms" data-wow-duration="1500ms" href="https://youtu.be/PZ-vS28CPfk" data-fancybox="gallery" data-caption=""><i class="fa-sharp fa-solid fa-play"></i></a>
-          </div>
-        </div>
-      </div>
+
 
     </div>
   </div>
