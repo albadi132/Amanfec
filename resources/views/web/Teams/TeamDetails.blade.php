@@ -38,19 +38,19 @@
 
               <!-- العناوين -->
               <div class="sec-title mb-4">
-                <h6 class="sub-title">Team Member</h6>
+                <h6 class="sub-title" style="color: #fff; font-weight: bold;" >Team Member</h6>
                 <h2 class="title">{{ $member->name }}</h2>
                 @if($member->title)
-                  <p class="text text-muted fs-5">{{ $member->title }}</p>
+                  <p >{{ $member->title }}</p>
                 @endif
                 @if($member->department)
-                  <p class="text text-secondary fw-semibold">Department: {{ $member->department->name }}</p>
+                 <!-- <p class="text text-secondary fw-semibold"> {{ $member->department->name }}</p> -->
                 @endif
               </div>
 
               <!-- السيرة الذاتية -->
               @if($member->bio)
-              <div class="about-block-two mt-4">
+              <div class="about-block-two mt-4 w-100">
                 <p class="text" style="line-height: 1.9;">
                   {!! nl2br(e($member->bio)) !!}
                 </p>
