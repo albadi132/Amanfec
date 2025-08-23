@@ -22,9 +22,8 @@
           <div class="blog-details__left">
             @if ($news->cover_image)
             <div class="blog-details__img mb-4 text-center">
-  <img src="{{ asset('storage/' . $news->cover_image) }}"
-       alt="{{ $news->title }}"
-       style="max-width: 100%; width: 1000px; height: auto; border-radius: 10px;">
+  <img src="{{ asset('storage/' . $news->cover_image) }}" style=" width: auto ; height: 700px; border-radius: 10px;"
+       alt="{{ $news->title }}">
 </div>
             @endif
 
