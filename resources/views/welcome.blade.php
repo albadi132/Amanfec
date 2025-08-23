@@ -24,10 +24,16 @@
             <div class="col-lg-8 content-column">
               <div class="inner-column">
               <!--  <h6 class="sub-title" data-animation="fadeInUp" data-delay=".3s" >Aman Fire Engineering & Safety Consultancy</h6> -->
-                <h1 class="title" data-animation="fadeInUp" data-delay=".5s">Your Reliable
-                  <span>Fire & Life Safety Partner</span>
-                  Across the GCC
-                </h1>
+          <h1 class="title" data-animation="fadeInUp" data-delay=".5s">
+  Your Reliable
+  <span class="no-break-inline">
+    <span>Fire</span>
+    <span style="color:#d62828;">&</span>
+    <span>Life Safety Partner</span>
+  </span>
+  Across the GCC
+</h1>
+
                 <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="{{ route('Services') }}" style="color: #fff; font-weight: bold;">Explore Our Services</a>
               </div>
             </div>
@@ -48,8 +54,13 @@
               <div class="inner-column">
                <!--  <h6 class="sub-title" data-animation="fadeInUp" data-delay=".3s">Your Safety, Our Priority</h6> -->
                 <h1 class="title" data-animation="fadeInUp" data-delay=".5s">Protecting
-                  <span>Lives & Property</span>
-                  Through Expertise
+
+                  <span class="no-break-inline">
+    <span>Lives</span>
+    <span style="color:#d62828;">&</span>
+    <span>Property</span>
+  </span>
+                  with Proven Solutions
                 </h1>
                 <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="{{ route('ContactUs') }}" style="color: #fff; font-weight: bold;">Get In Touch</a>
               </div>
@@ -383,36 +394,33 @@ We don’t just follow safety codes, we help shape them. Our purpose is clear: p
 
     <div class="swiper service-slider">
       <div class="swiper-wrapper">
-        <!-- Service 1 -->
-        <div class="swiper-slide">
-          <div class="service-block">
-            <a class="arry-btn" href="{{ route('Code-Consulting') }}"><i class="fa-regular fa-arrow-up-right"></i></a>
-            <div class="content-box">
-              <div class="icon">
-
-              </div>
-              <figure class="shape">
-                <img src="{{ asset('build/images/shape/service-item-shape.png')}}" alt="Image">
-              </figure>
-              <div class="content">
-  <span class="number">01</span>
-                <h4 class="title"><a href="{{ route('Code-Consulting') }}">Code Consulting</a></h4>
-                <p class="text">
-                    Comprehensive code compliance services including NFPA, SBC, and GCC reviews, performance-based design, and peer consultations.
-</p>
-              </div>
-            </div>
-            <div class="image-box">
-              <figure class="image">
-                <img src="{{ asset('build/images/new/CodeConsulting.png')}}" alt="Fire Engineering">
-              </figure>
-            </div>
-          </div>
-        </div>
-       <!-- Service 2 -->
+<!-- Service 1 -->
 <div class="swiper-slide">
   <div class="service-block">
-    <a class="arry-btn" href="{{ route('Fire-Protection-Design') }}"><i class="fa-regular fa-arrow-up-right"></i></a>
+    <a class="arry-btn" href="{{ route('Strategic-Management-and-Emergency-Planning') }}"><i class="fa-regular fa-arrow-up-right"></i></a>
+    <div class="content-box">
+      <div class="icon"></div>
+      <figure class="shape">
+        <img src="{{ asset('build/images/shape/service-item-shape.png')}}" alt="Image">
+      </figure>
+      <div class="content">
+        <span class="number">01</span>
+        <h4 class="title"><a href="{{ route('Strategic-Management-and-Emergency-Planning') }}">Strategic Management & Emergency Planning</a></h4>
+        <p class="text">Customized safety & security strategies aligned with your risk profile and emergency response needs.</p>
+      </div>
+    </div>
+    <div class="image-box">
+      <figure class="image">
+        <img src="{{ asset('build/images/new/SurveysRiskAssessments.png')}}" alt="Service Image">
+      </figure>
+    </div>
+  </div>
+</div>
+
+<!-- Service 2 -->
+<div class="swiper-slide">
+  <div class="service-block">
+    <a class="arry-btn" href="{{ route('Code-Compliance-and-Consulting') }}"><i class="fa-regular fa-arrow-up-right"></i></a>
     <div class="content-box">
       <div class="icon"></div>
       <figure class="shape">
@@ -420,21 +428,88 @@ We don’t just follow safety codes, we help shape them. Our purpose is clear: p
       </figure>
       <div class="content">
         <span class="number">02</span>
-        <h4 class="title"><a href="{{ route('Fire-Protection-Design') }}">Fire Protection Design</a></h4>
-        <p class="text">
-          Design and integration of sprinkler, standpipe, alarm, suppression, and smoke control systems tailored to each project’s needs.
-        </p>
+        <h4 class="title"><a href="{{ route('Code-Compliance-and-Consulting') }}">Code Compliance & Consulting</a></h4>
+        <p class="text">Clear guidance to interpret and apply fire & life safety codes with practical, actionable solutions.</p>
       </div>
     </div>
     <div class="image-box">
       <figure class="image">
-        <img src="{{ asset('build/images/new/FireProtectionDesign.png')}}" alt="Fire Engineering">
+        <img src="{{ asset('build/images/new/CodeConsulting.png')}}" alt="Service Image">
       </figure>
     </div>
   </div>
 </div>
 
 <!-- Service 3 -->
+<div class="swiper-slide">
+  <div class="service-block">
+    <a class="arry-btn" href="{{ route('Master-Plan-Review') }}"><i class="fa-regular fa-arrow-up-right"></i></a>
+    <div class="content-box">
+      <div class="icon"></div>
+      <figure class="shape">
+        <img src="{{ asset('build/images/shape/service-item-shape.png')}}" alt="Image">
+      </figure>
+      <div class="content">
+        <span class="number">03</span>
+        <h4 class="title"><a href="{{ route('Master-Plan-Review') }}">Master Plan Review</a></h4>
+        <p class="text">In-depth peer reviews for fire & life safety elements in master plan submissions.</p>
+      </div>
+    </div>
+    <div class="image-box">
+      <figure class="image">
+        <img src="{{ asset('build/images/new/ConstructionSiteServices.png')}}" alt="Service Image">
+      </figure>
+    </div>
+  </div>
+</div>
+
+<!-- Service 4 -->
+<div class="swiper-slide">
+  <div class="service-block">
+    <a class="arry-btn" href="{{ route('Code-Based-Fire-Protection-Design') }}"><i class="fa-regular fa-arrow-up-right"></i></a>
+    <div class="content-box">
+      <div class="icon"></div>
+      <figure class="shape">
+        <img src="{{ asset('build/images/shape/service-item-shape.png')}}" alt="Image">
+      </figure>
+      <div class="content">
+        <span class="number">04</span>
+        <h4 class="title"><a href="{{ route('Code-Based-Fire-Protection-Design') }}">Code-Based Fire Protection Design</a></h4>
+        <p class="text">Complete design & review of alarm/detection, sprinklers, suppression, and smoke control systems.</p>
+      </div>
+    </div>
+    <div class="image-box">
+      <figure class="image">
+        <img src="{{ asset('build/images/new/cpd-synergen-oil-importance-risk-assessment.jpg')}}" alt="Service Image">
+      </figure>
+    </div>
+  </div>
+</div>
+
+<!-- Service 5 -->
+<div class="swiper-slide">
+  <div class="service-block">
+    <a class="arry-btn" href="{{ route('Performance-Based-Design') }}"><i class="fa-regular fa-arrow-up-right"></i></a>
+    <div class="content-box">
+      <div class="icon"></div>
+      <figure class="shape">
+        <img src="{{ asset('build/images/shape/service-item-shape.png')}}" alt="Image">
+      </figure>
+      <div class="content">
+        <span class="number">05</span>
+        <h4 class="title"><a href="{{ route('Performance-Based-Design') }}">Performance-Based Design</a></h4>
+        <p class="text">Advanced fire engineering for complex buildings that exceed prescriptive code limits.</p>
+      </div>
+    </div>
+    <div class="image-box">
+      <figure class="image">
+        <img src="{{ asset('build/images/new/energy-regulations.jpeg')}}" alt="Service Image">
+      </figure>
+    </div>
+  </div>
+</div>
+
+<!-- Service 6 -->
 <div class="swiper-slide">
   <div class="service-block">
     <a class="arry-btn" href="{{ route('Modeling-Services') }}"><i class="fa-regular fa-arrow-up-right"></i></a>
@@ -444,95 +519,111 @@ We don’t just follow safety codes, we help shape them. Our purpose is clear: p
         <img src="{{ asset('build/images/shape/service-item-shape.png')}}" alt="Image">
       </figure>
       <div class="content">
-        <span class="number">03</span>
-        <h4 class="title"><a href="{{ route('Modeling-Services') }}">Modeling Services</a></h4>
-        <p class="text">
-        Advanced simulations including CFD, FDS, evacuation, and smoke modeling to ensure safety and optimize building performance.
-        </p>
-      </div>
-    </div>
-    <div class="image-box">
-      <figure class="image">
-     <img src="{{ asset('build/images/new/ModelingServices.png')}}" alt="Fire Engineering">
-      </figure>
-    </div>
-  </div>
-</div>
-
-<!-- Service 4 -->
-<div class="swiper-slide">
-  <div class="service-block">
-    <a class="arry-btn" href="{{ route('Construction-and-Site-Services') }}"><i class="fa-regular fa-arrow-up-right"></i></a>
-    <div class="content-box">
-      <div class="icon"></div>
-      <figure class="shape">
-        <img src="{{ asset('build/images/shape/service-item-shape.png')}}" alt="Image">
-      </figure>
-      <div class="content">
-        <span class="number">04</span>
-        <h4 class="title"><a href="{{ route('Construction-and-Site-Services') }}">Construction & Site Services</a></h4>
-        <p class="text">
-         On-site support including shop drawing reviews, inspections, progress reports, RFIs, and quality assurance during construction.
-        </p>
-      </div>
-    </div>
-    <div class="image-box">
-      <figure class="image">
-        <img src="{{ asset('build/images/new/ConstructionSiteServices.png')}}" alt="Fire Engineering">
-      </figure>
-    </div>
-  </div>
-</div>
-
-<!-- Service 5 -->
-<div class="swiper-slide">
-  <div class="service-block">
-    <a class="arry-btn" href="{{ route('Testing-and-Commissioning') }}"><i class="fa-regular fa-arrow-up-right"></i></a>
-    <div class="content-box">
-      <div class="icon"></div>
-      <figure class="shape">
-        <img src="{{ asset('build/images/shape/service-item-shape.png')}}" alt="Image">
-      </figure>
-      <div class="content">
-        <span class="number">05</span>
-        <h4 class="title"><a href="{{ route('Testing-and-Commissioning') }}">Testing & Commissioning</a></h4>
-        <p class="text">
-         System testing, special inspections, witnessing, and final documentation to ensure all life safety systems are operational and compliant.
-        </p>
-      </div>
-    </div>
-    <div class="image-box">
-      <figure class="image">
-         <img src="{{ asset('build/images/new/TestingCommissioning.png')}}" alt="Fire Engineering">
-      </figure>
-    </div>
-  </div>
-</div>
-
-<!-- Service 6 -->
-<div class="swiper-slide">
-  <div class="service-block">
-    <a class="arry-btn" href="{{ route('Surveys-and-Risk-Assessments') }}"><i class="fa-regular fa-arrow-up-right"></i></a>
-    <div class="content-box">
-      <div class="icon"></div>
-      <figure class="shape">
-        <img src="{{ asset('build/images/shape/service-item-shape.png')}}" alt="Image">
-      </figure>
-      <div class="content">
         <span class="number">06</span>
-        <h4 class="title"><a href="{{ route('Surveys-and-Risk-Assessments') }}">Surveys & Risk Assessments</a></h4>
-        <p class="text">
-     Life safety audits, emergency plans, gap analysis, and compliance support to enhance safety and meet regulatory requirements.
-        </p>
+        <h4 class="title"><a href="{{ route('Modeling-Services') }}">Modelling</a></h4>
+        <p class="text">FDS/CFD simulations for smoke movement, temperature profiles, and tenability analysis.</p>
       </div>
     </div>
     <div class="image-box">
       <figure class="image">
-        <img src="{{ asset('build/images/new/SurveysRiskAssessments.png')}}" alt="Fire Engineering">
+        <img src="{{ asset('build/images/new/FireProtectionDesign.png')}}" alt="Service Image">
       </figure>
     </div>
   </div>
 </div>
+
+<!-- Service 7 -->
+<div class="swiper-slide">
+  <div class="service-block">
+    <a class="arry-btn" href="{{ route('Commissioning') }}"><i class="fa-regular fa-arrow-up-right"></i></a>
+    <div class="content-box">
+      <div class="icon"></div>
+      <figure class="shape">
+        <img src="{{ asset('build/images/shape/service-item-shape.png')}}" alt="Image">
+      </figure>
+      <div class="content">
+        <span class="number">07</span>
+        <h4 class="title"><a href="{{ route('Commissioning') }}">Commissioning</a></h4>
+        <p class="text">End-to-end commissioning plans, functional testing, and integrated system verification.</p>
+      </div>
+    </div>
+    <div class="image-box">
+      <figure class="image">
+        <img src="{{ asset('build/images/new/istockphoto-2006177264-612x612.jpg')}}" alt="Service Image">
+      </figure>
+    </div>
+  </div>
+</div>
+
+<!-- Service 8 -->
+<div class="swiper-slide">
+  <div class="service-block">
+    <a class="arry-btn" href="{{ route('Fire-Detection-and-Alarm-Systems') }}"><i class="fa-regular fa-arrow-up-right"></i></a>
+    <div class="content-box">
+      <div class="icon"></div>
+      <figure class="shape">
+        <img src="{{ asset('build/images/shape/service-item-shape.png')}}" alt="Image">
+      </figure>
+      <div class="content">
+        <span class="number">08</span>
+        <h4 class="title"><a href="{{ route('Fire-Detection-and-Alarm-Systems') }}">Fire Detection & Alarm Systems</a></h4>
+        <p class="text">Design, review, and verification of fire alarm systems across all occupancies.</p>
+      </div>
+    </div>
+    <div class="image-box">
+      <figure class="image">
+        <img src="{{ asset('build/images/new/ModelingServices.png')}}" alt="Service Image">
+      </figure>
+    </div>
+  </div>
+</div>
+
+<!-- Service 9 -->
+<div class="swiper-slide">
+  <div class="service-block">
+    <a class="arry-btn" href="{{ route('Fire-Suppression-Systems') }}"><i class="fa-regular fa-arrow-up-right"></i></a>
+    <div class="content-box">
+      <div class="icon"></div>
+      <figure class="shape">
+        <img src="{{ asset('build/images/shape/service-item-shape.png')}}" alt="Image">
+      </figure>
+      <div class="content">
+        <span class="number">09</span>
+        <h4 class="title"><a href="{{ route('Fire-Suppression-Systems') }}">Fire Suppression Systems</a></h4>
+        <p class="text">Hydraulic calculations, layout design, and performance reviews for suppression systems.</p>
+      </div>
+    </div>
+    <div class="image-box">
+      <figure class="image">
+        <img src="{{ asset('build/images/new/Oil-and-Gas-Management.jpg')}}" alt="Service Image">
+      </figure>
+    </div>
+  </div>
+</div>
+
+<!-- Service 10 -->
+<div class="swiper-slide">
+  <div class="service-block">
+    <a class="arry-btn" href="{{ route('Smoke-Control-Systems') }}"><i class="fa-regular fa-arrow-up-right"></i></a>
+    <div class="content-box">
+      <div class="icon"></div>
+      <figure class="shape">
+        <img src="{{ asset('build/images/shape/service-item-shape.png')}}" alt="Image">
+      </figure>
+      <div class="content">
+        <span class="number">10</span>
+        <h4 class="title"><a href="{{ route('Smoke-Control-Systems') }}">Smoke Control Systems</a></h4>
+        <p class="text">Design of smoke control strategies to protect egress routes and critical areas.</p>
+      </div>
+    </div>
+    <div class="image-box">
+      <figure class="image">
+        <img src="{{ asset('build/images/new/service-image1.jpg')}}" alt="Service Image">
+      </figure>
+    </div>
+  </div>
+</div>
+
 
       </div>
     </div>
@@ -1307,6 +1398,16 @@ Phone: +971 28 18 6717
 .team-section .team-block:hover .content-box .title a {
   color: #d62828;
 }
+.no-break-inline {
+  display: inline !important;        /* إجبار البلوك يكون inline */
+  white-space: nowrap !important;    /* يمنع الكسر */
+}
+
+.no-break-inline span {
+  display: inline !important;        /* كل سبان داخله يكون inline */
+  white-space: nowrap !important;
+}
+
 </style>
 @endpush
 

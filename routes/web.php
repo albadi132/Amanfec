@@ -48,6 +48,16 @@ Route::get('/Services/Testing-and-Commissioning', [ServicesController::class, 'T
 Route::get('/Services/Surveys-and-Risk-Assessments', [ServicesController::class, 'SurveysAndRiskAssessments'])->name('Surveys-and-Risk-Assessments');
 
 
+Route::get('/Services/Strategic-Management-and-Emergency-Planning', [ServicesController::class, 'FireProtectionDesign'])->name('Strategic-Management-and-Emergency-Planning');
+Route::get('/Services/Code-Compliance-and-Consulting', [ServicesController::class, 'CodeConsulting'])->name('Code-Compliance-and-Consulting');
+Route::get('/Services/Code-Master-Plan-Review', [ServicesController::class, 'ConstructionAndSiteServices'])->name('Master-Plan-Review');
+Route::get('/Services/Code-Based-Fire-Protection-Design', [ServicesController::class, 'SurveysAndRiskAssessments'])->name('Code-Based-Fire-Protection-Design');
+Route::get('/Services/Performance-Based-Design', [ServicesController::class, 'ModelingServices'])->name('Performance-Based-Design');
+Route::get('/Services/Commissioning', [ServicesController::class, 'CodeConsulting'])->name('Commissioning');
+Route::get('/Services/Fire-Detection-and-Alarm-Systems', [ServicesController::class, 'FireProtectionDesign'])->name('Fire-Detection-and-Alarm-Systems');
+Route::get('/Services/Fire-Suppression-Systems', [ServicesController::class, 'FireProtectionDesign'])->name('Fire-Suppression-Systems');
+Route::get('/Services/Smoke-Control-Systems', [ServicesController::class, 'TestingAndCommissioning'])->name('Smoke-Control-Systems');
+
 Route::get('/Projects/Fire-Protection-Life-Safety-Riyadh', [ProjectsController::class, 'FireProtectionLifeSafetyRiyadh'])->name('Fire-Protection-Life-Safety-Riyadh');
 Route::get('/Projects/Life-Safety-System-Review-Riyadh', [ProjectsController::class, 'LifeSafetySystemReviewRiyadh'])->name('Life-Safety-System-Review-Riyadh');
 Route::get('/Projects/Fire-Safety-Design-Review-Jeddah', [ProjectsController::class, 'FireSafetyDesignReviewJeddah'])->name('Fire-Safety-Design-Review-Jeddah');

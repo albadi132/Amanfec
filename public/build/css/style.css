@@ -5049,7 +5049,8 @@ Section Title
 .banner-section .text {
   font-size: 20px;
   line-height: 30px;
-  font-weight: 600;
+  font-weight: 500;
+  font-style: italic;
   color: var(--theme-color-white);
   max-width: 305px;
   margin-bottom: 0;
@@ -6262,18 +6263,39 @@ Section Title
   }
 }
 .about-section-two .content-column .inner-column .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* خلي الصور تبدأ من اليسار بدلاً من توزيعها */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* العنصر ياخذ نصف العرض (صورتين بجانب بعض) */
+.about-section-two .content-column .inner-column .info .item {
+    flex: 0 0 calc(50% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* الصور تتجاوب بشكل صحيح */
+.about-section-two .content-column .inner-column .info .item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* للأجهزة المتوسطة (تابلت) - 3 صور */
+@media (min-width: 768px) {
+    .about-section-two .content-column .inner-column .info .item {
+        flex: 0 0 calc(33.333% - 20px);
+    }
+}
+
+/* للأجهزة الكبيرة (ديسكتوب) - 4 صور */
+@media (min-width: 1200px) {
+    .about-section-two .content-column .inner-column .info .item {
+        flex: 0 0 calc(25% - 20px);
+    }
 }
 .about-section-two .content-column .inner-column .info .user {
   display: -webkit-box;
@@ -6299,7 +6321,7 @@ Section Title
 }
 .about-section-two .content-column .inner-column .info .user .title {
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   position: relative;
   z-index: 1;

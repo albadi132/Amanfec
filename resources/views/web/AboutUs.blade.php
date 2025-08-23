@@ -23,8 +23,7 @@
             <img src="{{ asset('build/images/about/about-three-image.jpg')}}" alt="Image">
           </figure>
           <p class="text mt-30 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-            With a presence across Oman, Saudi Arabia, and the UAE, Aman Fire Engineering Consultants delivers advanced fire protection and life safety solutions for high-risk environments like high-rises, oil & gas, airports, and hospitals.
-          </p>
+        Aman Fire Engineering Consultants operates across Oman, Saudi Arabia, and the UAE, delivering advanced fire protection and life safety solutions to a wide range of sectors, ensuring compliance, resilience, and safety in every project.  </p>
           <div class="info mt-50 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
             <a class="btn-one-rounded" href="{{ route('ContactUs') }}" style="color: #fff; font-weight: bold;">Contact Us <i class="fa-regular fa-arrow-up-right"></i></a>
 
@@ -37,7 +36,7 @@
           <div class="sec-title">
             <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms" style="color: #fff; font-weight: bold;">ABOUT AMAN</h6>
             <h2 class="title wow splt-txt" data-splitting>
-              Fire safety is not optional — it’s engineered into every decision we make.
+              Fire safety is not optional. It’s engineered in every decision we make
             </h2>
           </div>
 
@@ -135,25 +134,19 @@
     </section>
     <!-- Brand area end here -->
 
-
+<br><br>
 	<!--Project Details Start-->
   <section class="project-details ">
     <div class="container">
       <div class="row">
-
-      <div class="row align-items-center">
-        <div class="col-lg-6">
+<div class="col-12">
           <div class="sec-title mb-40">
-            <h2 class="title mb-30 wow splt-txt" data-splitting>Mission & Vision</h2>
+            <h2 class="title mb-30 wow splt-txt" data-splitting>Trusted Expertise. Proven Results.</h2>
+            <p class="text wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">A regional leader in fire protection and life safety engineering, combining deep regulatory knowledge with hands-on expertise to deliver cost-effective, high-performing, and code-compliant solutions.
+            </p>
           </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="project-details__top mt-lg-5">
-            <div class="text mb-40">Our mission is to ensure a safe built environment through advanced fire and life safety solutions. Our vision is to be the trusted partner for developers, consultants, and authorities in building safety, by consistently delivering code-compliant, efficient, and innovative solutions tailored to project-specific needs. </div>
+  </div>
 
-          </div>
-        </div>
-      </div>
       <div class="row">
         <div class="col-md-6">
           <div class="project-details__top mt-5">
@@ -170,49 +163,128 @@
       <div class="row align-items-lg-center">
         <div class="col-lg-6">
           <div class="sec-title mb-40">
+            <h2 class="title mb-30 wow splt-txt" data-splitting>About Aman</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="project-details__top mt-lg-5">
+            <div class="text mb-40">
+             At Aman, we deliver advanced fire protection and life safety solutions for complex, high-risk environments across the Middle East. With certified experts and deep regional insight, we provide end-to-end services from code consulting and performance-based design to system modeling, inspection, and commissioning. We don’t just follow safety codes, we help shape them. Our purpose is clear: protecting people, property, and progress.</div>
+
+          </div>
+        </div>
+      </div>
+
+            <div class="row align-items-lg-center">
+        <div class="col-lg-6">
+          <div class="sec-title mb-40">
+            <h2 class="title mb-30 wow splt-txt" data-splitting>Mission & Vision</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="project-details__top mt-lg-5">
+            <div class="text mb-40">
+        Our mission is to ensure a safe built environment through advanced fire and life safety solutions. Our vision is to be the trusted partner for developers, consultants, and authorities in building safety, by consistently delivering code-compliant, efficient, and innovative solutions tailored to project-specific needs.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+            <div class="row align-items-lg-center">
+        <div class="col-lg-6">
+          <div class="sec-title mb-40">
             <h2 class="title mb-30 wow splt-txt" data-splitting>Our Message</h2>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="project-details__top mt-lg-5">
             <div class="text mb-40">
-              Through years of collaboration with developers, insurance bodies, and authorities, Aman emphasizes a proactive, professional approach to fire and life safety. Our message is clear: safety isn’t optional it’s engineered into every decision, design, and service we provide.
-            </div>
-
-          </div>
+       Through years of collaboration with developers, insurance bodies, and authorities, Aman emphasizes a proactive, professional approach to fire and life safety. Our message is clear: safety isn’t optional it’s engineered into every decision, design, and service we provide.   </div>
         </div>
       </div>
+
     </div>
-
-
-    <div class="row align-items-lg-center">
-        <div class="col-lg-6">
-          <div class="sec-title mb-40">
-            <h2 class="title mb-30 wow splt-txt" data-splitting>our Expertise<br class="d-none d-lg-block">  </h2>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="project-details__top mt-lg-5">
-            <ul class="project-list mb-5">
-              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Front-end Engineering Design (FEED)	</li>
-              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Community Risk Assessment	</li>
-              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Emergency Management</li>
-              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Hazardous Materials</li>
-                 <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Product Evaluation	</li>
-              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Litigation Support	</li>
-              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> HCIS/SAF Consultancy Services </li>
-              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Strategic Risk Management</li>
-                            <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Fire and Building Safety	</li>
-              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Master Plan Review </li>
-              <li class="d-flex align-items-center"><i class="icon fa-classic fa-solid fa-check fa-fw"></i> Seminars & Training</li>
-            </ul>
-          </div>
-        </div>
-      </div>
   </div>
   </section>
   <!--Project Details End-->
 
+
+
+     <section class="project-details ">
+    <div class="container">
+    <div class="row align-items-lg-center">
+  <div class="col-lg-6">
+    <div class="sec-title mb-40">
+      <h2 class="title mb-30 wow splt-txt" data-splitting>our Expertise<br class="d-none d-lg-block"></h2>
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="project-details__top mt-lg-5">
+      <ul class="project-list mb-5">
+        <li class="expertise-card">
+          <i class="icon fa-solid fa-drafting-compass"></i>
+          <span class="text">Front-end Engineering Design (FEED)</span>
+        </li>
+
+        <li class="expertise-card">
+          <i class="icon fa-solid fa-clipboard-check"></i>
+          <span class="text">Community Risk Assessment</span>
+        </li>
+
+        <li class="expertise-card">
+          <i class="icon fa-solid fa-life-ring"></i>
+          <span class="text">Emergency Management</span>
+        </li>
+
+        <li class="expertise-card">
+          <i class="icon fa-solid fa-radiation"></i>
+          <span class="text">Hazardous Materials</span>
+        </li>
+
+        <li class="expertise-card">
+          <i class="icon fa-solid fa-clipboard-list"></i>
+          <span class="text">Product Evaluation</span>
+        </li>
+
+        <li class="expertise-card">
+          <i class="icon fa-solid fa-gavel"></i>
+          <span class="text">Litigation Support</span>
+        </li>
+
+        <li class="expertise-card">
+          <i class="icon fa-solid fa-shield-halved"></i>
+          <span class="text">HCIS/SAF Consultancy Services</span>
+        </li>
+
+        <li class="expertise-card">
+          <i class="icon fa-solid fa-chess-knight"></i>
+          <span class="text">Strategic Risk Management</span>
+        </li>
+
+        <li class="expertise-card">
+          <i class="icon fa-solid fa-fire-extinguisher"></i>
+          <span class="text">Fire and Building Safety</span>
+        </li>
+
+        <li class="expertise-card">
+          <!-- إذا كنت تستخدم FA5 استخدم fa-project-diagram بدل fa-diagram-project -->
+          <i class="icon fa-solid fa-diagram-project"></i>
+          <span class="text">Master Plan Review</span>
+        </li>
+
+        <li class="expertise-card">
+          <i class="icon fa-solid fa-chalkboard-user"></i>
+          <span class="text">Seminars & Training</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  </div>
+  </section>
 <!-- Testimonial area start here -->
 <section class="testimonial-section-three">
   <div class="sec-wrp pb-50 pt-120 mt-120 mb-120">
@@ -274,6 +346,49 @@
 <!-- Testimonial area end here -->
 
 
+@push('styles')
+<style>
+  :root { --brand-red:#d44c4c; }
 
+  .project-list {
+    list-style: none;
+    padding: 0; margin: 0;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0,1fr));
+    gap: 16px;
+  }
+  @media (min-width:576px){ .project-list{ grid-template-columns: repeat(2,1fr); } }
+  @media (min-width:992px){ .project-list{ grid-template-columns: repeat(3,1fr); } }
+
+  .expertise-card{
+    background:#fff;
+    border:1px solid rgba(0,0,0,.06);
+    border-radius:16px;
+    padding:14px 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.05);
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    display:flex; align-items:center; gap:12px;
+  }
+  .expertise-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,.10);
+    border-color: var(--brand-red);
+  }
+
+  .expertise-card .icon{
+    font-size:22px;
+    color: var(--brand-red);
+    width:40px; height:40px;
+    display:flex; align-items:center; justify-content:center;
+    border-radius:12px;
+    background: rgba(212,76,76,.08);
+    flex: 0 0 40px;
+  }
+  .expertise-card .text{
+    font-weight:500; line-height:1.4;
+  }
+</style>
+
+@endpush
 
 </x-app.app-layout>
