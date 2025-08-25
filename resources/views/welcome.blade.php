@@ -227,7 +227,7 @@
    <div class="info mt-50 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                            <div class="user">
 
-                  <h6 class="title">Approved Service Providers & Recognised by Experts<img src="{{ asset('build/images/about/about-two-line.png')}}" alt="Image"></h6>
+                  <h6 class="title">Approved Service Providers & Verified Credentials<img src="{{ asset('build/images/about/about-two-line.png')}}" alt="Image"></h6>
                   </div>
                 </div>
 
