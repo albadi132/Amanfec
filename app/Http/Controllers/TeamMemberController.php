@@ -51,26 +51,49 @@ class TeamMemberController extends Controller
         return view('dashboard.team_members.index', compact('departments'));
     }
 
-    public function store(Request $request)
-    {
-       $validated = $request->validate([
-    'name' => 'required|string|max:255',
-    'title' => 'nullable|string|max:255',
-    'department_id' => 'nullable|exists:departments,id',
-    'display_order' => 'nullable|integer',
-    'show_on_homepage' => 'required|boolean',
-    'status' => 'required|string|in:active,inactive',
-    'photo' => 'nullable|image|max:2048',
-    'bio' => 'nullable|string',
-]);
+public function store(Request $request)
+{
+    try {
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'title' => 'nullable|string|max:255',
+            'department_id' => 'nullable|exists:departments,id',
+            'display_order' => 'nullable|integer',
+            'show_on_homepage' => 'required|boolean',
+            'status' => 'required|string|in:active,inactive',
+            'photo' => 'nullable|image|max:3048',
+            'bio' => 'nullable|string',
+        ]);
 
         if ($request->hasFile('photo')) {
             $validated['photo'] = $request->file('photo')->store('team_photos', 'public');
         }
 
         TeamMember::create($validated);
-        return response()->json(['success' => true, 'message' => 'Team member created.']);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Team member created successfully.'
+        ], 201);
+
+    } catch (\Illuminate\Validation\ValidationException $e) {
+        // أخطاء الفاليديشِن
+        return response()->json([
+            'success' => false,
+            'message' => 'Validation failed.',
+            'errors' => $e->errors()
+        ], 422);
+
+    } catch (\Exception $e) {
+        // أي خطأ آخر (مثلاً من الداتابيس)
+        return response()->json([
+            'success' => false,
+            'message' => 'Something went wrong while creating the team member.',
+            'error' => $e->getMessage(), // ممكن تخفيه في الإنتاج وتكتب فقط رسالة عامة
+        ], 500);
     }
+}
+
 
     public function update(Request $request, $id)
     {

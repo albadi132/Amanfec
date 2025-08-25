@@ -54,7 +54,7 @@ class NewsController extends Controller
             'title' => 'required|string|max:255',
             'slug' => 'nullable|string|max:255|unique:news,slug',
             'content' => 'required|string',
-            'cover_image' => 'nullable|image|max:2048',
+            'cover_image' => 'nullable|image|max:5048',
             'published_at' => 'nullable|date',
         ]);
 
